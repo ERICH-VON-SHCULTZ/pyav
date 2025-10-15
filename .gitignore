@@ -1,0 +1,63 @@
+v14_runyw.sbatch
+# Large files
+pyav.ext3
+
+# PyTorch Lightning checkpoints
+*.ckpt
+
+# Weights & Biases logs
+*.wandb
+wandb/
+
+# Lightning logs directory
+lightning_logs/
+
+# Test runs directory
+testruns/
+
+# Experiments directory (if you want to exclude all)
+experiments/
+
+# Common Python ignores
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+EOF
+
+dihard.py~

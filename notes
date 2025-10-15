@@ -1,0 +1,319 @@
+-12/26/24
+
+Finally got something resembling training to work after, well, tons of hacks. But I still get a ton of warning messages. For example I see the following message:
+
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/audio/core/task.py:423: UserWarning: Ignoring 'npy' metadata because of its type (<class 'pathlib.PosixPath'>). Only str and int are supported for now.
+
+I think I can get rid of this by adding the "npy" key to the list of supported tyoes in task.py that are read in by other means. This is around line 402 in core/task.py. Let's add it in and see if a bunch of messages vanish.
+
+Yes, that worked. But there are a bunch of other irritating messages like:
+
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+
+How do I know the files were properly segmented and processed? It looks like the team did the right thing, but we all know only the paranoid survive. Need to double check this at some point.
+
+I don't like the way the numbers look at all so I will try to set all the weights an biases to zero for the second branch and see what happens.
+
+I get DER of 132% after 4 Epochs. Let me try to run zero epochs.
+
+12/29/24
+
+It took a ton of work to get it to run. The basic problem was that I could not figure out how to access the hyper parameters it took me a long time to do so. Now it seems to be running but the results are, well, awful. DER of 279% and higher. Let me see if I can debug this. 
+
+These are the results I get when running pyannote from singpyn3.1 and dihard in the /vast directory:
+
+                diarization error rate   total correct correct false alarm false alarm missed detection missed detection confusion confusion
+                                      %                       %                       %                                 %                   %
+item                                                                                                                                         
+1j20qq1JyX4_c_01                  63.03  155.05   72.49   46.75       15.16        9.78            37.08            23.91     45.49     29.34
+1j20qq1JyX4_c_02                  74.97  227.81   75.64   33.20       18.62        8.17            58.87            25.84     93.29     40.95
+1j20qq1JyX4_c_03                  50.82  197.26  119.83   60.75       22.82       11.57            54.21            27.48     23.22     11.77
+2qQs3Y9OJX0_c_01                  67.83   89.26   55.25   61.90       26.53       29.73             2.55             2.85     31.46     35.25
+2qQs3Y9OJX0_c_02                  66.65  116.06   64.71   55.75       26.00       22.40             2.08             1.79     49.28     42.46
+2qQs3Y9OJX0_c_03                  44.46  147.43  108.56   73.64       26.68       18.09             7.79             5.28     31.08     21.08
+4ZpjKfu6Cl8_c_01                  81.40  141.59   52.56   37.12       26.22       18.52            43.66            30.83     45.37     32.04
+4ZpjKfu6Cl8_c_02                  58.59  154.92   93.60   60.42       29.45       19.01            13.11             8.46     48.21     31.12
+4ZpjKfu6Cl8_c_03                  63.39  112.29   65.13   58.00       24.02       21.39             3.95             3.52     43.21     38.48
+5milLu-6bWI_c_01                  37.99  174.41  120.49   69.09       12.34        7.08            22.97            13.17     30.95     17.75
+5milLu-6bWI_c_02                  39.44  217.06  151.03   69.58       19.58        9.02            28.16            12.98     37.86     17.44
+5milLu-6bWI_c_03                  42.77  221.49  162.60   73.41       35.84       16.18            15.51             7.00     43.38     19.58
+7YpF6DntOYw_c_01                  68.11  132.86   54.42   40.96       12.05        9.07            44.01            33.12     34.44     25.92
+7YpF6DntOYw_c_02                  65.02   54.12   22.55   41.68        3.62        6.69            11.81            21.83     19.75     36.49
+7YpF6DntOYw_c_03                  34.07   66.24   48.33   72.96        4.66        7.03             3.75             5.66     14.16     21.38
+BCiuXAuCKAU_c_01                  73.12  206.56   63.43   30.71        7.89        3.82            92.98            45.01     50.16     24.28
+BCiuXAuCKAU_c_02                  44.65  154.10  101.56   65.90       16.27       10.56            25.31            16.43     27.23     17.67
+BCiuXAuCKAU_c_03                  50.85  207.37  109.14   52.63        7.21        3.48            84.82            40.90     13.40      6.46
+HKjR70GCRPE_c_01                  46.11  146.56  106.57   72.72       27.60       18.83             7.89             5.38     32.09     21.90
+HKjR70GCRPE_c_02                  56.37  145.10   98.06   67.58       34.75       23.95             8.06             5.55     38.98     26.87
+HKjR70GCRPE_c_03                  53.69  165.78   93.93   56.66       17.15       10.34             9.16             5.53     62.69     37.82
+IKdBLciu_-A_c_01                  47.91  127.60   87.08   68.25       20.61       16.15             7.52             5.90     32.99     25.86
+IKdBLciu_-A_c_02                  79.19   95.71   32.42   33.87       12.50       13.06            30.25            31.60     33.05     34.53
+IKdBLciu_-A_c_03                  72.58   98.63   35.54   36.03        8.49        8.61            39.14            39.69     23.95     24.28
+KHHgQ_Pe4cI_c_01                  59.08  180.62   82.18   45.50        8.26        4.57            85.88            47.55     12.56      6.96
+KHHgQ_Pe4cI_c_02                  69.39  119.56   44.68   37.37        8.08        6.76            45.68            38.21     29.19     24.42
+KHHgQ_Pe4cI_c_03                  68.85  156.28   58.80   37.62       10.12        6.47            62.17            39.78     35.31     22.59
+PmElx9ZVByw_c_01                  36.29  142.53  109.09   76.54       18.28       12.82            10.51             7.37     22.94     16.09
+PmElx9ZVByw_c_02                  12.20  147.22  135.21   91.84        5.94        4.04            10.77             7.31      1.25      0.85
+PmElx9ZVByw_c_03                  28.48  120.01   92.94   77.45        7.11        5.92             9.23             7.69     17.84     14.87
+a5mEmM6w_ks_c_01                  28.61  235.73  191.80   81.36       23.50        9.97            15.12             6.42     28.81     12.22
+a5mEmM6w_ks_c_02                  20.59  185.80  164.14   88.34       16.60        8.93             4.90             2.64     16.76      9.02
+a5mEmM6w_ks_c_03                  24.22  130.15  109.23   83.92       10.59        8.14             8.39             6.44     12.54      9.64
+kMy-6RtoOVU_c_01                  65.57  185.77   80.99   43.60       17.04        9.17            48.99            26.37     55.79     30.03
+kMy-6RtoOVU_c_02                  64.56  121.57   74.44   61.23       31.35       25.79            16.17            13.30     30.97     25.47
+kMy-6RtoOVU_c_03                  79.38  111.45   44.20   39.65       21.22       19.04            14.42            12.94     52.84     47.41
+qrkff49p4E4_c_01                  24.08  147.36  116.30   78.93        4.43        3.01            15.10            10.25     15.95     10.83
+qrkff49p4E4_c_02                  10.78  139.38  130.02   93.28        5.67        4.07             8.06             5.78      1.30      0.93
+qrkff49p4E4_c_03                  24.42  160.17  130.96   81.76        9.90        6.18            11.70             7.30     17.51     10.93
+zC5Fh2tTS1U_c_01                  44.87  193.38  130.27   67.36       23.65       12.23            22.41            11.59     40.70     21.05
+zC5Fh2tTS1U_c_02                  67.82  172.54   84.20   48.80       28.67       16.62            17.64            10.23     70.69     40.97
+zC5Fh2tTS1U_c_03                  70.76  240.12  105.87   44.09       35.65       14.85            65.10            27.11     69.16     28.80
+zR725veL-DI_c_01                  28.52  190.05  146.16   76.90       10.31        5.42            28.94            15.23     14.96      7.87
+zR725veL-DI_c_02                  28.35  215.43  168.36   78.15       14.00        6.50            29.60            13.74     17.47      8.11
+zR725veL-DI_c_03                  32.03  199.67  148.07   74.15       12.36        6.19            32.39            16.22     19.22      9.63
+IzvOYVMltkI_c_01                  28.67  156.71  127.28   81.21       15.49        9.88             7.60             4.85     21.84     13.94
+IzvOYVMltkI_c_02                  55.44  191.14  113.73   59.50       28.55       14.94            10.10             5.28     67.31     35.21
+IzvOYVMltkI_c_03                  28.48  172.52  153.22   88.81       29.82       17.29             2.62             1.52     16.68      9.67
+UrsCy6qIGoo_c_01                  28.15  122.69   94.28   76.85        6.13        5.00             7.85             6.40     20.56     16.76
+UrsCy6qIGoo_c_02                  51.26  125.06   69.44   55.52        8.48        6.78             9.79             7.83     45.84     36.65
+UrsCy6qIGoo_c_03                  37.63  197.16  132.90   67.41        9.94        5.04            11.55             5.86     52.71     26.73
+yn9WN9lsHRE_c_01                  42.24  188.10  122.75   65.26       14.10        7.50            30.78            16.36     34.57     18.38
+yn9WN9lsHRE_c_02                  43.67  156.18   95.53   61.17        7.55        4.83            52.44            33.58      8.21      5.26
+yn9WN9lsHRE_c_03                  58.47  196.37  103.38   52.64       21.82       11.11            19.22             9.79     73.77     37.57
+TOTAL                             48.17 8556.01 5355.33   62.59      920.67       10.76          1369.72            16.01   1830.96     21.40
+
+This is what I get when I run from the pyav dihard using singpyav:
+
+                 diarization error rate   total correct correct false alarm false alarm missed detection missed detection confusion confusion
+                                      %                       %                       %                                 %                   %
+item                                                                                                                                         
+1j20qq1JyX4_c_01                 149.15  155.05   81.71   52.70      157.92      101.85            13.04             8.41     60.30     38.89
+1j20qq1JyX4_c_02                  95.42  227.81  104.35   45.81       93.92       41.23            21.79             9.56    101.67     44.63
+1j20qq1JyX4_c_03                  94.15  197.26  134.17   68.02      122.63       62.17            19.96            10.12     43.13     21.87
+2qQs3Y9OJX0_c_01                 278.40   89.26   51.48   57.68      210.71      236.08             0.03             0.03     37.74     42.29
+2qQs3Y9OJX0_c_02                 204.11  116.06   63.69   54.87      184.52      158.99             0.65             0.56     51.73     44.57
+2qQs3Y9OJX0_c_03                 136.85  147.43   97.21   65.94      151.54      102.79             0.03             0.02     50.19     34.04
+4ZpjKfu6Cl8_c_01                 167.70  141.59   68.33   48.26      164.19      115.95             5.84             4.13     67.42     47.61
+4ZpjKfu6Cl8_c_02                 133.68  154.92   93.92   60.62      146.09       94.30             1.07             0.69     59.93     38.68
+4ZpjKfu6Cl8_c_03                 222.94  112.29   44.12   39.29      182.17      162.23             0.52             0.46     67.66     60.25
+5milLu-6bWI_c_01                 109.84  174.41  114.09   65.41      131.25       75.25             9.72             5.57     50.60     29.01
+5milLu-6bWI_c_02                  87.40  217.06  130.38   60.07      103.02       47.46            20.14             9.28     66.54     30.66
+5milLu-6bWI_c_03                  88.34  221.49  119.17   53.80       93.35       42.14            14.90             6.73     87.42     39.47
+7YpF6DntOYw_c_01                 170.41  132.86   69.99   52.68      163.54      123.09            10.45             7.87     52.42     39.45
+7YpF6DntOYw_c_02                 446.56   54.12   19.31   35.68      206.85      382.24             0.03             0.06     34.77     64.26
+7YpF6DntOYw_c_03                 366.26   66.24   47.38   71.53      223.74      337.79             0.03             0.05     18.82     28.42
+BCiuXAuCKAU_c_01                 109.98  206.56   92.07   44.57      112.69       54.55            25.30            12.25     89.19     43.18
+BCiuXAuCKAU_c_02                 134.70  154.10   89.86   58.31      143.33       93.01             4.50             2.92     59.74     38.77
+BCiuXAuCKAU_c_03                 117.24  207.37   94.10   45.38      129.85       62.62            37.28            17.98     75.98     36.64
+HKjR70GCRPE_c_01                 130.72  146.56  109.73   74.87      154.75      105.59             1.37             0.93     35.46     24.20
+HKjR70GCRPE_c_02                 142.95  145.10   92.72   63.90      155.05      106.85             0.21             0.15     52.17     35.96
+HKjR70GCRPE_c_03                 124.56  165.78   85.47   51.56      126.18       76.11             2.01             1.22     78.29     47.23
+IKdBLciu_-A_c_01                 149.67  127.60   87.27   68.40      150.65      118.07             1.31             1.03     39.01     30.57
+IKdBLciu_-A_c_02                 268.43   95.71   45.22   47.25      206.43      215.68             3.20             3.34     47.29     49.41
+IKdBLciu_-A_c_03                 258.26   98.63   41.02   41.59      197.11      199.85             2.81             2.85     54.80     55.56
+KHHgQ_Pe4cI_c_01                 125.82  180.62   87.17   48.26      133.80       74.08            33.49            18.54     59.96     33.20
+KHHgQ_Pe4cI_c_02                 199.65  119.56   52.46   43.88      171.60      143.53            14.22            11.89     52.88     44.23
+KHHgQ_Pe4cI_c_03                 113.63  156.28  122.42   78.33      143.72       91.96             1.06             0.68     32.80     20.99
+PmElx9ZVByw_c_01                 138.53  142.53  102.48   71.90      157.39      110.43             1.98             1.39     38.07     26.71
+PmElx9ZVByw_c_02                 118.72  147.22  122.19   83.00      149.74      101.71             0.03             0.02     25.00     16.98
+PmElx9ZVByw_c_03                 184.67  120.01   78.76   65.63      180.38      150.30             0.46             0.38     40.79     33.99
+a5mEmM6w_ks_c_01                  71.21  235.73  146.21   62.03       78.35       33.24            16.13             6.84     73.38     31.13
+a5mEmM6w_ks_c_02                  84.81  185.80  137.92   74.23      109.70       59.04             1.56             0.84     46.32     24.93
+a5mEmM6w_ks_c_03                 155.67  130.15   88.81   68.24      161.27      123.90             1.47             1.13     39.87     30.63
+kMy-6RtoOVU_c_01                 113.19  185.77   95.85   51.60      120.36       64.79             6.20             3.34     83.72     45.07
+kMy-6RtoOVU_c_02                 206.85  121.57   49.54   40.75      179.45      147.61             1.09             0.89     70.94     58.35
+kMy-6RtoOVU_c_03                 206.49  111.45   69.87   62.69      188.55      169.17             0.06             0.05     41.53     37.26
+qrkff49p4E4_c_01                 116.71  147.36  128.70   87.34      153.32      104.05             0.74             0.50     17.92     12.16
+qrkff49p4E4_c_02                 125.30  139.38  125.46   90.01      160.73      115.31             0.18             0.13     13.74      9.86
+qrkff49p4E4_c_03                 122.33  160.17  105.11   65.62      140.87       87.95             1.10             0.69     53.96     33.69
+zC5Fh2tTS1U_c_01                  80.44  193.38  133.58   69.08       95.75       49.51             8.20             4.24     51.60     26.68
+zC5Fh2tTS1U_c_02                 129.84  172.54   81.61   47.30      133.10       77.14             5.70             3.30     85.23     49.40
+zC5Fh2tTS1U_c_03                  93.71  240.12  113.61   47.31       98.49       41.02            39.68            16.52     86.84     36.17
+zR725veL-DI_c_01                 106.98  190.05  110.58   58.18      123.84       65.16            13.96             7.34     65.52     34.47
+zR725veL-DI_c_02                  98.32  215.43  100.01   46.43       96.39       44.74            11.87             5.51    103.54     48.06
+zR725veL-DI_c_03                 111.42  199.67   86.76   43.45      109.57       54.87             9.30             4.66    103.61     51.89
+IzvOYVMltkI_c_01                 127.65  156.71  101.59   64.83      144.92       92.47             1.70             1.08     53.43     34.09
+IzvOYVMltkI_c_02                  91.12  191.14  126.04   65.94      109.06       57.06             0.26             0.14     64.84     33.92
+IzvOYVMltkI_c_03                 111.25  172.52  108.57   62.93      127.98       74.18             0.57             0.33     63.38     36.74
+UrsCy6qIGoo_c_01                 176.33  122.69   88.21   71.90      181.86      148.23             4.61             3.76     29.87     24.34
+UrsCy6qIGoo_c_02                 198.49  125.06   55.11   44.06      178.29      142.56             3.41             2.73     66.54     53.21
+UrsCy6qIGoo_c_03                  93.40  197.16  120.22   60.98      107.22       54.38             4.44             2.25     72.50     36.77
+yn9WN9lsHRE_c_01                 108.19  188.10  111.33   59.19      126.73       67.37            14.90             7.92     61.87     32.89
+yn9WN9lsHRE_c_02                 140.33  156.18   85.66   54.85      148.64       95.18             4.89             3.13     65.63     42.02
+yn9WN9lsHRE_c_03                 103.20  196.37  105.94   53.95      112.22       57.15            12.65             6.44     77.78     39.61
+TOTAL                            132.92 8556.01 5018.54   58.66     7834.76       91.57           412.12             4.82   3125.34     36.53
+
+1/4/25
+
+After enormous pain I think I have it largely working.
+
+One epoch of training DER is 77%.
+
+Lets try two.
+
+1/24/25 Meeting
+
+I believe I have made the ncessary moidifications to allow us to try some interesting experiments on combining audio and visual data.
+
+The program that runs everything is dihard.py in /scratch/map22-share/pyav
+
+I added a second source of input corresponding to the Dino embeddings called "npy". npy is just a series of Numpy vectors. For Dino, I belive there is one 1024 element embedding for each frame in the video. Theere is one npy file per rttm file. I modifed the database file accordingly; so now database.yml in that directory serves as the input for the dihard program.
+
+I then made seevral changes to pyannote that would read teh second source of inputs correspoding to these embeddings in addition to the waveform files. I then built a new Model called "ModifiedModel" derived from the PyanNet model and placed it at the top of the dihard.py code. Look around line 90. One set of key code can be found around line 170. What I do there is to added a set of submodels for processing the video models that are programmatically selectable by specifying teh model parameter. They are currently quite simple, just a set of linear transforms followed by a reLU nonlinearity. You can add fancier models to this set easily.
+
+Then you can go down to line 300 (or so) where I defrine the forward pass processing. The code is not hard to read if you ignore the dozens of "print" statements in the code. I left them in as I fear they may be useful to resurrect if we start seeing bugs. Notice we now pass two inputs to the forward pass, the audio and the embeddings ("npy"). Depending upon the model, the modelhigh level archicture is changed (i.e, where fusion takes place). It can happen either at low levels or at high levels of processing. This can also be changed progrmamaticaly, but you will have to modify the code accordingly.
+
+Here is a list of possible things to do:
+
+1) Add an LSTM on top of the embeddings similar to how the audio data is processed. Currently I only have used simple linear + reLU on top of the video features.
+
+2) Add an attention mechanism on top of teh video features. This is apparently a common way to fuse teh modelities employed by other models.
+
+3) Add a transformer on top of the video features. Pyannote was largely engineered before transformers became easy to use as buiilding blocks inside pytorch.
+
+and also:
+
+1) Try other A-V corpora that are "easier" to diarize.
+2) I just came across a new multimodal diarization toolkit that we should check out. Maybe it has good OOB poerformace. I don't think they evalauted on our corpus (not sure why).
+3) Directly use pixel features from the frames sratehr than the embeddings. Or try to use the bounding boxes that have been produced from the  face detection and focus on those features. The problem is that I am not sure how to deal with the fact that there can be  multiple bounding boxes in a frame. Perhaps an attention mechanism could be used here as well. Would take some thought.
+
+Results are obtained with a set of sbatch scripts in the pyav directory
+
+sbatch file 	     output file   	  Experiment						Results
+v01.audioonly.sbatch v01.audioonly.out	  Audio-only features					48.14, 	46.05 after ft	
+v02.both.sbatch	     v02.both.out	  A-V two  RelU for embeddings low-level fusion		47.23
+v03.both.sbatch	     v03.both.out	  A-V four RelU for embeddings low-level fusion		49.77
+v04.both.sbatch	     v04.both.out	  A-V two RelU for merge low-level fusion		50.42
+v05.both.sbatch	     v05.both.out	  A-V two RelU high-level fusion   			46.36
+v06.both.sbatch      v06.both.out	  A-V two RelU for mege high-level fusion		45.85
+
+I turned off hyperparameter tuning because I don't think it was working well for this data....kept getting different results...
+
+7/16/25
+
+Because the datasets the students created were deleted from scratch I need to create them myself. I believe I need the rttm files the mp4 files and the npy files. The last will be the trickiest.
+
+first, rewrite_rttm.py reads the rttm files and writes them as zero-based to correpond to the wav files. OK that is done. I did it by prompting the search engine with a prompt and then modifying what comes out.
+"generate python code to read all the files in a directory, create a new directory, and write out the files with minor modifications."
+
+second, will be called segment_mp4.py
+I need to install moviepy moviepy.editor is not there. drat.
+I just a pip install moviepy (though for some reason it was giving me writing problems even though the singularity image was set to rw). I had to reinstall again. Not sure what was going on, will probably come back to haunt me.
+
+third, as expected the ambeddings are a huge pain in the neck. I was such an idiot for not copying over their software just making a ton of work for myself. Damn.
+
+OK so I am in the vjepa-test directory. I don't remember why I made this. I am using the singvejpa image. It still runs but it only does one clip per video file. I think the instructions I gave my students on sequential sampling were incorrect, the sampling refers to the video files not the clips inside the files. But to be sure I will do the following - make a test.segements.csv file that has all the segements inside
+
+ls -d /scratch/map22-share/AVA-AVD/AVA-AVD/dataset/videos_new | sed 's/$/ 0/' > test.segments.csv
+
+I had to rewrite parts of the data loader to produce what I hope are emebdddings. They will be different from what the students produced as for some reason they only took two samples. Not sure what that means maybe two samples per 16 element frame? Hard to parse maybe I can ask them.
+
+7/23/25
+
+segment_mp4.py only does mp4 files. Lets try mkv files. I wrote segment_mkv.py to handle this. OK that ran. Let me do same for webm. segment_webm.py. That ran as well.
+
+I did have an idea. I can't figure out how to hack the AVL-net code t but maybe we can extract it's embeddings and try it in pyannote.
+
+From linkedin: starting  7/21/25
+
+Michael Picheny   6:05 PM
+Hi Rae, Hope all is well with you. I have a quick question on the vjepa embeddings, hopefully you will remember the answer :-)
+
+Zirui (Rae) Liu   6:05 PM
+Hi Michael, thank you for reaching out! Hope everything is going well with you too 
+Please let me know the question and I will try my best to answer you 
+
+Michael Picheny   7:14 PM
+As I understand it, the way the code was originally written was to take segments of 16 fames per clip and create embeddings. As I understand it, you sampled two points per clip and extracted embeddings for these two points (perhaps by averaging?) I am not sure why you did this vs just sliding a window across all teh input frames and create a set of overlapping embeddings.
+
+Zirui (Rae) Liu   7:58 PM
+Ziqi worked on this part. I have a very high level understanding of it. Since Dino can only be applied on single frame and Vjepa can only be applied on videos, We need to align these two to make them comparable. So we decided to get embeddings for frames through both methods. Then we need to assign the length of the video as one (which we can force the video to be a single frame). Ziqi deep dived into the code and found that, due to the parameter setting, the shortest length is two instead of one. So she did this moving avg by taking two frames and then moved by one step each time. Then the difference is one frame. Now we can get the embedding of every single frame based on Vjepa.
+
+Hope this helps your work.(Edited)
+JUL 22
+
+Michael Picheny   1:25 PM
+Thanks! So I recreated the embedding code so I can recreate the embedding...but my impression is that Vjepa was trained on 16-frame concatenations of embeddings. Is that wrong? And If that is correct, how good are the embeddings for just a single (or two) frames?
+
+Zirui (Rae) Liu   9:27 PM
+You are right. Thats also our concern. The discriminator we trained based on this embedding didn’t perform really well… but we didn’t have better idea if we wanted to make two embeddings comparable 
+
+JUL 24
+Michael Picheny   9:39 AM
+OK. if I get some new students I may ask them to just rtuy the 16 frame version.
+
+Zirui (Rae) Liu   11:00 AM
+Let me know if you need anything from our end. Hope everything goes well and we do enjoyed working with you 
+
+Michael Picheny   1:01 PM
+Thanks. I am sorry this proved too be such a difficult problem. And I feel like an idiot for not copying all the files to someplace where they would not be deleted. I had to spend a lot of time to receate the data.
+
+Zirui (Rae) Liu   10:54 PM
+No worries and it’s not your fault. At least we have the code so it’s not that bad. And hopefully some students will be able to help out soon!
+
+JUL 25
+Michael Picheny   6:32 AM
+You have the code? AFAIK everything is gone. Where is the code? 
+
+JUL 26
+Zirui (Rae) Liu   4:11 PM
+Ah sorry. I thought you had the code because you raised the question about the code 
+
+Michael Picheny   5:09 PM
+No, I was just reading over the final report. I have had to recreate the code that extracts the embedding and creates the data files to be consistent with pyannote.
+
+Zirui (Rae) Liu   7:56 PM
+Ah, gotcha
+Hope things going well 
+
+I figured I should try to document the many changes I had to make to pyannote to get it to work while I might still remember it. May also come in useful when I need to write a paper, should I live so long.
+
+pyannote/audio/core:
+	inference.py - after waveform, sample_rate = aelf.model.audio(file) added:
+
+		     npy = self.model,npy(file)
+
+		     self.model.npy() is initialized as an Npy object in pyannote/audio/core/io.py
+	      	     which is defined in turn in pyannote/audio/core/io.py and reads in the npy file
+	      	     note that "file" is not the actual file but a dictionary of file types. More description is
+		     in the file pyannote/audio/core/io.py (below). The returned npy is a pytorch tensor whose rows are
+		     are the visual feature components and the columns, time. 
+
+		     return self.slide(waveform, npy, sample_rate, hook=hook) - npy was added.
+
+		     def slide(
+		     	 self,
+			 waveform: torch.Tensor,
+			 embeddings: torch.Tensor
+			 .
+			 .
+                     the argument embeddings was added. as above, embeddings are the visual features and
+		     correspond to npy, above.
+
+		     what then seems to happen is that the waveform itself is chopped into
+		     overlapping window_size segments shifted by step_size. The resultant chunks
+		     each correspond to (channel, frame) segments where channels I assume can be
+		     one or two channels (maybe more for meetings?) and frame means sample.
+
+		     we then need to do something similar for the visual features.
+
+                     I then assign embeddings_shape = embeddings.shape. My guess is that this can go
+		     after the next set of statements, which needs to be there for waveform
+		     processing. the has_last_chunk parameter is true if the original waveforrm is
+		     less than the window size (so of course, there is a last incomplete chunk) or
+		     (num_samples - window_size) % step_size is greater than 0. In other words,
+		     if the last window shift hits num_samples, you have a complete chunk. Otherwise you don't
+		     and you will have some leftover that will need to be processed.
+
+		     
+
+        io.py 	     -
+	model.py     -
+
+
+10/1/25
+
+OK here we go again. I got the code working but the results are awful. v07 abd v08 use simple RELU models v07 for jepa and v08 for Dino. It may be the reason is it looks like I initialize all thge weights to be zero. Let me try 1. That will be v09. regrettably I am doing this by actually changing the code in dihard.py.
+
+That did not make a difference. Let me try the justaudio option. v10
+
+That is clearly better but still way off from the original. Let me try OOB performace 

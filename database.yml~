@@ -1,0 +1,26 @@
+Databases:
+  AVA-AVD: /scratch/map22-share/AVA-AVD/AVA-AVD/dataset/waves/{uri}.wav
+Protocols:
+
+  AVA-AVD:
+
+    SpeakerDiarization:
+
+      data:
+
+        train:
+          uri: /scratch/map22-share/AVA-AVD/AVA-AVD/dataset/split/train.list
+          annotation: /scratch/zl5430/AVA-AVD-test/rttms/{uri}.rttm
+          annotated: /scratch/zl5430/AVA-AVD-test/uems/{uri}.uem
+          emb1: /scratch/zl5162/Clinton/AVA-AVD-test/embeddings_large/{uri}.emb1
+        development:
+          uri: /scratch/map22-share/AVA-AVD/AVA-AVD/dataset/split/val.list
+          annotation: /scratch/zl5430/AVA-AVD-test/rttms/{uri}.rttm
+          annotated: /scratch/zl5430/AVA-AVD-test/uems/{uri}.uem
+          emb1: /scratch/zl5162/Clinton/AVA-AVD-test/embeddings_large/{uri}.emb1
+        test:
+          uri: /scratch/map22-share/AVA-AVD/AVA-AVD/dataset/split/test.list
+          annotation: /scratch/zl5430/AVA-AVD-test/rttms/{uri}.rttm
+          annotated: /scratch/zl5430/AVA-AVD-test/uems/{uri}.uem
+          emb1: /scratch/zl5162/Clinton/AVA-AVD-test/embeddings_large/{uri}.emb1
+

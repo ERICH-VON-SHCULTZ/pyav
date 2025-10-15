@@ -1,0 +1,17 @@
+export PYANNOTE_DATABASE_CONFIG=/scratch/map22-share/minetta/database.yaml
+
+# python /vast/map22/map22-share/map22-share/headcam/code/headcam/dihard.py \
+#       --groundtruths test \
+#       --protocol headcam16.SpeakerDiarization.try1_y
+
+# python /vast/map22/map22-share/map22-share/headcam/code/headcam/dihard.py \
+#       --groundtruths test \
+#       --finetune \
+#       --epochs 2 \
+#       --protocol headcam16.SpeakerDiarization.try1_y
+
+python /scratch/map22-share/pyav/dihard.py \
+       --groundtruths test \
+       --finetune \
+       --epochs 4 \
+       --protocol headcam16.SpeakerDiarization.try1_y

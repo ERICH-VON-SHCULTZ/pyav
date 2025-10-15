@@ -1,0 +1,5 @@
+python video_dinov2_embeddings.py \
+       --outdir /scratch/map22-share/AVA-AVD/AVA-AVD/dataset/embeddings_dinov2_small \
+       --model small \
+       /scratch/map22-share/vjepa-test/jepa/test.segments2.files
+       

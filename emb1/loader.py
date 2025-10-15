@@ -1,0 +1,20 @@
+from pyannote.database import ProtocolFile
+from pathlib import Path
+import numpy
+from typing import Text
+
+class Emb1Loader:
+    def __init__(self, emb1: Path):
+        print(f'Initializing Emb11Loader with {emb11}')
+        # your code should obviously do something smarter.
+        # see pyannote.database.loader.RTTMLoader for an example.
+        temp = emb1
+        temp.rename(temp.with_suffix('.npy'))
+        self.emb1 = numpy.load(temp)
+
+    def __call__(self, current_file: ProtocolFile) -> Text:
+        uri = current_file["uri"]
+        print(f'Processing {uri} with Emb1 1Loader')
+        # your code should obviously do something smarter.
+        # see pyannote.database.loader.RTTMLoader for an example.
+        return f'{uri}.npy'

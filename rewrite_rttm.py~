@@ -1,0 +1,49 @@
+import os
+
+def process_files_in_directory(input_dir, output_dir):
+    """
+    Reads all files from an input directory, applies a modification,
+    and writes the modified files to a new output directory.
+
+    Args:
+        input_dir (str): The path to the directory containing the input files.
+        output_dir (str): The path to the directory where modified files will be saved.
+    """
+
+    # Create the output directory if it doesn't exist
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Iterate over all files in the input directory
+    for filename in os.listdir(input_dir):
+        input_filepath = os.path.join(input_dir, filename)
+
+        # Check if it's a file (and not a subdirectory)
+        if os.path.isfile(input_filepath):
+            with open(input_filepath, 'r') as infile:
+                content = infile.read()
+
+            # Perform your minor modifications here
+            # Example: Convert content to uppercase
+            modified_content = content.upper()
+
+            output_filepath = os.path.join(output_dir, filename)
+            with open(output_filepath, 'w') as outfile:
+                outfile.write(modified_content)
+
+            print(f"Processed '{filename}' and saved to '{output_filepath}'")
+
+# Example Usage:
+if __name__ == "__main__":
+    source_directory = "input_files"  # Replace with your input directory path
+    destination_directory = "output_files"  # Replace with your desired output directory path
+
+    # Create some dummy input files for demonstration
+    os.makedirs(source_directory, exist_ok=True)
+    with open(os.path.join(source_directory, "file1.txt"), "w") as f:
+        f.write("This is file one.\n")
+        f.write("Hello World!\n")
+    with open(os.path.join(source_directory, "file2.txt"), "w") as f:
+        f.write("Another file here.\n")
+        f.write("Python is great.\n")
+
+    process_files_in_directory(source_directory, destination_directory)

@@ -1,0 +1,13 @@
+from setuptools import setup, find_packages
+setup(
+    name="npy",
+    packages=find_packages(),
+    install_requires=["pyannote.database >= 4.0"],
+    entry_points={
+        "pyannote.database.loader": [
+            # load embedding files 
+            # with your_package.loader.Emb1Loader
+            ".npy = npuy.loader:NpyLoader",
+        ],
+    }
+)

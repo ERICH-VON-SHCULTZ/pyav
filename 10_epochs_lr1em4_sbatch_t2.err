@@ -1,0 +1,1599 @@
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/registry.py:502: UserWarning: Replacing existing AVA-AVD.SpeakerDiarization.data protocol by the one defined in '/scratch/map22-share/pyav/database.yml'.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/audio/tasks/segmentation/speaker_diarization2.py:181: UserWarning: `loss` has been deprecated and has no effect.
+  warnings.warn("`loss` has been deprecated and has no effect.")
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+You are using a CUDA device ('NVIDIA A100-SXM4-80GB') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 1 processes
+----------------------------------------------------------------------------------------------------
+
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: picheny (pichenygroup). Use `wandb login --relogin` to force relogin
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: Tracking run with wandb version 0.19.1
+wandb: Run data is saved locally in /scratch/map22-share/pyav/epoch1test/wandb/run-20250114_143457-y7pkjzix
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run 10_epochs_lr1em4_sbatch_t2
+wandb: ⭐️ View project at https://wandb.ai/pichenygroup/testruns
+wandb: 🚀 View run at https://wandb.ai/pichenygroup/testruns/runs/y7pkjzix
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+SLURM auto-requeueing enabled. Setting signal handlers.
+/ext3/miniforge3/lib/python3.12/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:424: The 'val_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=15` in the `DataLoader` to improve performance.
+/ext3/miniforge3/lib/python3.12/site-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:431: It is recommended to use `self.log('loss/val/segmentation', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/ext3/miniforge3/lib/python3.12/site-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:431: It is recommended to use `self.log('loss/val', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/ext3/miniforge3/lib/python3.12/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:424: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=15` in the `DataLoader` to improve performance.
+/ext3/miniforge3/lib/python3.12/site-packages/pytorch_lightning/utilities/data.py:122: Your `IterableDataset` has `__len__` defined. In combination with multi-process data loading (when num_workers > 1), `__len__` could be inaccurate if each worker is not configured independently to avoid having duplicate data.
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+[rank0]:[W114 14:35:13.581633015 reducer.cpp:1400] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+/ext3/miniforge3/lib/python3.12/site-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:431: It is recommended to use `self.log('loss/train/segmentation', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/ext3/miniforge3/lib/python3.12/site-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:431: It is recommended to use `self.log('loss/train', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+`Trainer.fit` stopped: `max_epochs=10` reached.
+INFO:speechbrain.utils.quirks:Applied quirks (see `speechbrain.utils.quirks`): [disable_jit_profiling, allow_tf32]
+INFO:speechbrain.utils.quirks:Excluded quirks specified by the `SB_DISABLE_QUIRKS` environment (comma-separated list): []
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/pipeline/parameter.py:160: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  return trial.suggest_uniform(name, self.low, self.high)
+
+Current trial:   0%|          | 0/54 [00:00<?, ?it/s][A/ext3/miniforge3/lib/python3.12/site-packages/pyannote/audio/utils/reproducibility.py:74: ReproducibilityWarning: TensorFloat-32 (TF32) has been disabled as it might lead to reproducibility issues and lower accuracy.
+It can be re-enabled by calling
+   >>> import torch
+   >>> torch.backends.cuda.matmul.allow_tf32 = True
+   >>> torch.backends.cudnn.allow_tf32 = True
+See https://github.com/pyannote/pyannote-audio/issues/1370 for more details.
+
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/audio/models/blocks/pooling.py:104: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at ../aten/src/ATen/native/ReduceOps.cpp:1823.)
+  std = sequences.std(dim=-1, correction=1)
+
+Current trial:   2%|▏         | 1/54 [00:17<15:26, 17.49s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:   4%|▎         | 2/54 [00:31<13:37, 15.73s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:   6%|▌         | 3/54 [00:45<12:20, 14.52s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:   7%|▋         | 4/54 [00:54<10:21, 12.43s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:   9%|▉         | 5/54 [01:05<09:48, 12.00s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  11%|█         | 6/54 [01:19<10:14, 12.79s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  13%|█▎        | 7/54 [01:32<10:06, 12.90s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  15%|█▍        | 8/54 [01:47<10:15, 13.38s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  17%|█▋        | 9/54 [02:00<10:01, 13.36s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  19%|█▊        | 10/54 [02:15<10:06, 13.80s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  20%|██        | 11/54 [02:30<10:05, 14.07s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  22%|██▏       | 12/54 [02:44<09:56, 14.19s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  24%|██▍       | 13/54 [02:57<09:28, 13.87s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  26%|██▌       | 14/54 [03:11<09:16, 13.91s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  28%|██▊       | 15/54 [03:25<08:56, 13.77s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  30%|██▉       | 16/54 [03:39<08:51, 13.98s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  31%|███▏      | 17/54 [03:54<08:41, 14.08s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  33%|███▎      | 18/54 [04:08<08:27, 14.08s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  35%|███▌      | 19/54 [04:22<08:11, 14.04s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  37%|███▋      | 20/54 [04:36<08:01, 14.15s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  39%|███▉      | 21/54 [04:50<07:50, 14.25s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  41%|████      | 22/54 [05:05<07:35, 14.23s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  43%|████▎     | 23/54 [05:18<07:09, 13.84s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  44%|████▍     | 24/54 [05:31<06:48, 13.61s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  46%|████▋     | 25/54 [05:45<06:39, 13.77s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  48%|████▊     | 26/54 [05:58<06:19, 13.55s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  50%|█████     | 27/54 [06:11<06:06, 13.59s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  52%|█████▏    | 28/54 [06:26<05:58, 13.80s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  54%|█████▎    | 29/54 [06:40<05:50, 14.03s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  56%|█████▌    | 30/54 [06:55<05:40, 14.20s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  57%|█████▋    | 31/54 [07:09<05:29, 14.31s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  59%|█████▉    | 32/54 [07:24<05:16, 14.39s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  61%|██████    | 33/54 [07:39<05:02, 14.42s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  63%|██████▎   | 34/54 [07:53<04:48, 14.45s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  65%|██████▍   | 35/54 [08:08<04:35, 14.49s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  67%|██████▋   | 36/54 [08:22<04:21, 14.51s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  69%|██████▊   | 37/54 [08:37<04:06, 14.49s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  70%|███████   | 38/54 [08:50<03:47, 14.22s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  72%|███████▏  | 39/54 [09:04<03:32, 14.17s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  74%|███████▍  | 40/54 [09:18<03:17, 14.12s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  76%|███████▌  | 41/54 [09:33<03:04, 14.20s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  78%|███████▊  | 42/54 [09:47<02:50, 14.25s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  80%|███████▉  | 43/54 [10:00<02:31, 13.80s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  81%|████████▏ | 44/54 [10:14<02:20, 14.01s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  83%|████████▎ | 45/54 [10:29<02:07, 14.14s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  85%|████████▌ | 46/54 [10:43<01:53, 14.24s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  87%|████████▋ | 47/54 [10:58<01:40, 14.32s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  89%|████████▉ | 48/54 [11:10<01:22, 13.77s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  91%|█████████ | 49/54 [11:22<01:06, 13.27s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  93%|█████████▎| 50/54 [11:35<00:52, 13.13s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  94%|█████████▍| 51/54 [11:50<00:40, 13.53s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  96%|█████████▋| 52/54 [12:04<00:27, 13.78s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial:  98%|█████████▊| 53/54 [12:12<00:12, 12.13s/it][A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+
+Current trial: 100%|██████████| 54/54 [12:27<00:00, 12.85s/it][A
+                                                              [A/ext3/miniforge3/lib/python3.12/site-packages/pyannote/pipeline/parameter.py:160: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  return trial.suggest_uniform(name, self.low, self.high)
+
+Current trial:   0%|          | 0/54 [00:00<?, ?it/s][A
+Current trial:   2%|▏         | 1/54 [00:00<00:06,  7.68it/s][A
+Current trial:   4%|▎         | 2/54 [00:00<00:06,  7.97it/s][A
+Current trial:   6%|▌         | 3/54 [00:00<00:06,  8.36it/s][A
+Current trial:   9%|▉         | 5/54 [00:00<00:05,  9.72it/s][A
+Current trial:  11%|█         | 6/54 [00:00<00:05,  9.21it/s][A
+Current trial:  13%|█▎        | 7/54 [00:00<00:05,  9.03it/s][A
+Current trial:  15%|█▍        | 8/54 [00:00<00:05,  8.50it/s][A
+Current trial:  17%|█▋        | 9/54 [00:01<00:05,  8.41it/s][A
+Current trial:  19%|█▊        | 10/54 [00:01<00:05,  8.23it/s][A
+Current trial:  20%|██        | 11/54 [00:01<00:05,  8.06it/s][A
+Current trial:  22%|██▏       | 12/54 [00:01<00:05,  7.83it/s][A
+Current trial:  24%|██▍       | 13/54 [00:01<00:05,  8.20it/s][A
+Current trial:  26%|██▌       | 14/54 [00:01<00:04,  8.32it/s][A
+Current trial:  28%|██▊       | 15/54 [00:01<00:04,  8.38it/s][A
+Current trial:  30%|██▉       | 16/54 [00:01<00:04,  8.19it/s][A
+Current trial:  31%|███▏      | 17/54 [00:02<00:04,  8.04it/s][A
+Current trial:  33%|███▎      | 18/54 [00:02<00:04,  7.92it/s][A
+Current trial:  35%|███▌      | 19/54 [00:02<00:04,  8.03it/s][A
+Current trial:  37%|███▋      | 20/54 [00:02<00:04,  7.92it/s][A
+Current trial:  39%|███▉      | 21/54 [00:02<00:04,  7.88it/s][A
+Current trial:  41%|████      | 22/54 [00:02<00:04,  7.86it/s][A
+Current trial:  43%|████▎     | 23/54 [00:02<00:03,  8.11it/s][A
+Current trial:  44%|████▍     | 24/54 [00:02<00:03,  8.17it/s][A
+Current trial:  46%|████▋     | 25/54 [00:03<00:03,  7.96it/s][A
+Current trial:  48%|████▊     | 26/54 [00:03<00:03,  8.06it/s][A
+Current trial:  50%|█████     | 27/54 [00:03<00:03,  7.76it/s][A
+Current trial:  52%|█████▏    | 28/54 [00:03<00:03,  7.83it/s][A
+Current trial:  54%|█████▎    | 29/54 [00:03<00:03,  7.75it/s][A
+Current trial:  56%|█████▌    | 30/54 [00:03<00:03,  7.81it/s][A
+Current trial:  57%|█████▋    | 31/54 [00:03<00:02,  7.69it/s][A
+Current trial:  59%|█████▉    | 32/54 [00:03<00:02,  7.59it/s][A
+Current trial:  61%|██████    | 33/54 [00:04<00:02,  7.57it/s][A
+Current trial:  63%|██████▎   | 34/54 [00:04<00:02,  7.66it/s][A
+Current trial:  65%|██████▍   | 35/54 [00:04<00:02,  7.69it/s][A
+Current trial:  67%|██████▋   | 36/54 [00:04<00:02,  7.72it/s][A
+Current trial:  69%|██████▊   | 37/54 [00:04<00:02,  7.60it/s][A
+Current trial:  70%|███████   | 38/54 [00:04<00:02,  7.73it/s][A
+Current trial:  72%|███████▏  | 39/54 [00:04<00:01,  7.78it/s][A
+Current trial:  74%|███████▍  | 40/54 [00:04<00:01,  8.04it/s][A
+Current trial:  76%|███████▌  | 41/54 [00:05<00:01,  7.99it/s][A
+Current trial:  78%|███████▊  | 42/54 [00:05<00:01,  7.93it/s][A
+Current trial:  80%|███████▉  | 43/54 [00:05<00:01,  7.97it/s][A
+Current trial:  81%|████████▏ | 44/54 [00:05<00:01,  7.59it/s][A
+Current trial:  83%|████████▎ | 45/54 [00:05<00:01,  7.39it/s][A
+Current trial:  85%|████████▌ | 46/54 [00:05<00:01,  7.41it/s][A
+Current trial:  87%|████████▋ | 47/54 [00:05<00:00,  7.41it/s][A
+Current trial:  89%|████████▉ | 48/54 [00:06<00:00,  7.79it/s][A
+Current trial:  91%|█████████ | 49/54 [00:06<00:00,  8.01it/s][A
+Current trial:  93%|█████████▎| 50/54 [00:06<00:00,  8.25it/s][A
+Current trial:  94%|█████████▍| 51/54 [00:06<00:00,  8.09it/s][A
+Current trial:  96%|█████████▋| 52/54 [00:06<00:00,  8.16it/s][A
+Current trial: 100%|██████████| 54/54 [00:06<00:00,  8.99it/s][A
+                                                              [A
+Current trial:   0%|          | 0/54 [00:00<?, ?it/s][A
+Current trial:   2%|▏         | 1/54 [00:00<00:06,  7.74it/s][A
+Current trial:   4%|▎         | 2/54 [00:00<00:06,  8.03it/s][A
+Current trial:   6%|▌         | 3/54 [00:00<00:06,  8.42it/s][A
+Current trial:   9%|▉         | 5/54 [00:00<00:05,  9.78it/s][A
+Current trial:  11%|█         | 6/54 [00:00<00:05,  9.26it/s][A
+Current trial:  13%|█▎        | 7/54 [00:00<00:05,  9.06it/s][A
+Current trial:  15%|█▍        | 8/54 [00:00<00:05,  8.54it/s][A
+Current trial:  17%|█▋        | 9/54 [00:01<00:05,  8.47it/s][A
+Current trial:  19%|█▊        | 10/54 [00:01<00:05,  8.27it/s][A
+Current trial:  20%|██        | 11/54 [00:01<00:05,  8.11it/s][A
+Current trial:  22%|██▏       | 12/54 [00:01<00:05,  7.87it/s][A
+Current trial:  24%|██▍       | 13/54 [00:01<00:04,  8.23it/s][A
+Current trial:  26%|██▌       | 14/54 [00:01<00:04,  8.34it/s][A
+Current trial:  28%|██▊       | 15/54 [00:01<00:04,  8.41it/s][A
+Current trial:  30%|██▉       | 16/54 [00:01<00:04,  8.23it/s][A
+Current trial:  31%|███▏      | 17/54 [00:02<00:04,  8.07it/s][A
+Current trial:  33%|███▎      | 18/54 [00:02<00:04,  7.96it/s][A
+Current trial:  35%|███▌      | 19/54 [00:02<00:04,  8.06it/s][A
+Current trial:  37%|███▋      | 20/54 [00:02<00:04,  7.95it/s][A
+Current trial:  39%|███▉      | 21/54 [00:02<00:04,  7.91it/s][A
+Current trial:  41%|████      | 22/54 [00:02<00:04,  7.88it/s][A
+Current trial:  43%|████▎     | 23/54 [00:02<00:03,  8.13it/s][A
+Current trial:  44%|████▍     | 24/54 [00:02<00:03,  8.18it/s][A
+Current trial:  46%|████▋     | 25/54 [00:03<00:03,  7.96it/s][A
+Current trial:  48%|████▊     | 26/54 [00:03<00:03,  8.02it/s][A
+Current trial:  50%|█████     | 27/54 [00:03<00:03,  8.12it/s][A
+Current trial:  52%|█████▏    | 28/54 [00:03<00:03,  8.08it/s][A
+Current trial:  54%|█████▎    | 29/54 [00:03<00:03,  7.93it/s][A
+Current trial:  56%|█████▌    | 30/54 [00:03<00:03,  7.95it/s][A
+Current trial:  57%|█████▋    | 31/54 [00:03<00:02,  7.80it/s][A
+Current trial:  59%|█████▉    | 32/54 [00:03<00:02,  7.67it/s][A
+Current trial:  61%|██████    | 33/54 [00:04<00:02,  7.63it/s][A
+Current trial:  63%|██████▎   | 34/54 [00:04<00:02,  7.72it/s][A
+Current trial:  65%|██████▍   | 35/54 [00:04<00:02,  7.75it/s][A
+Current trial:  67%|██████▋   | 36/54 [00:04<00:02,  7.77it/s][A
+Current trial:  69%|██████▊   | 37/54 [00:04<00:02,  7.73it/s][A
+Current trial:  70%|███████   | 38/54 [00:04<00:02,  7.85it/s][A
+Current trial:  72%|███████▏  | 39/54 [00:04<00:01,  7.88it/s][A
+Current trial:  74%|███████▍  | 40/54 [00:04<00:01,  8.12it/s][A
+Current trial:  76%|███████▌  | 41/54 [00:05<00:01,  8.05it/s][A
+Current trial:  78%|███████▊  | 42/54 [00:05<00:01,  7.96it/s][A
+Current trial:  80%|███████▉  | 43/54 [00:05<00:01,  8.00it/s][A
+Current trial:  81%|████████▏ | 44/54 [00:05<00:01,  7.61it/s][A
+Current trial:  83%|████████▎ | 45/54 [00:05<00:01,  7.41it/s][A
+Current trial:  85%|████████▌ | 46/54 [00:05<00:01,  7.43it/s][A
+Current trial:  87%|████████▋ | 47/54 [00:05<00:00,  7.43it/s][A
+Current trial:  89%|████████▉ | 48/54 [00:05<00:00,  7.81it/s][A
+Current trial:  91%|█████████ | 49/54 [00:06<00:00,  8.03it/s][A
+Current trial:  93%|█████████▎| 50/54 [00:06<00:00,  8.25it/s][A
+Current trial:  94%|█████████▍| 51/54 [00:06<00:00,  8.06it/s][A
+Current trial:  96%|█████████▋| 52/54 [00:06<00:00,  8.13it/s][A
+Current trial: 100%|██████████| 54/54 [00:06<00:00,  8.97it/s][A
+                                                              [A
+Current trial:   0%|          | 0/54 [00:00<?, ?it/s][A
+Current trial:   2%|▏         | 1/54 [00:00<00:06,  8.01it/s][A
+Current trial:   4%|▎         | 2/54 [00:00<00:06,  8.04it/s][A
+Current trial:   6%|▌         | 3/54 [00:00<00:06,  8.33it/s][A
+Current trial:   9%|▉         | 5/54 [00:00<00:04,  9.86it/s][A
+Current trial:  11%|█         | 6/54 [00:00<00:05,  9.42it/s][A
+Current trial:  13%|█▎        | 7/54 [00:00<00:05,  9.28it/s][A
+Current trial:  15%|█▍        | 8/54 [00:00<00:05,  8.77it/s][A
+Current trial:  17%|█▋        | 9/54 [00:01<00:05,  8.69it/s][A
+Current trial:  19%|█▊        | 10/54 [00:01<00:05,  8.53it/s][A
+Current trial:  20%|██        | 11/54 [00:01<00:05,  8.31it/s][A
+Current trial:  22%|██▏       | 12/54 [00:01<00:05,  8.11it/s][A
+Current trial:  24%|██▍       | 13/54 [00:01<00:04,  8.36it/s][A
+Current trial:  26%|██▌       | 14/54 [00:01<00:04,  8.27it/s][A
+Current trial:  28%|██▊       | 15/54 [00:01<00:04,  8.30it/s][A
+Current trial:  30%|██▉       | 16/54 [00:01<00:04,  8.24it/s][A
+Current trial:  31%|███▏      | 17/54 [00:01<00:04,  8.17it/s][A
+Current trial:  33%|███▎      | 18/54 [00:02<00:04,  8.09it/s][A
+Current trial:  35%|███▌      | 19/54 [00:02<00:04,  7.97it/s][A
+Current trial:  37%|███▋      | 20/54 [00:02<00:04,  7.96it/s][A
+Current trial:  39%|███▉      | 21/54 [00:02<00:04,  7.86it/s][A
+Current trial:  41%|████      | 22/54 [00:02<00:04,  7.91it/s][A
+Current trial:  43%|████▎     | 23/54 [00:02<00:03,  8.24it/s][A
+Current trial:  44%|████▍     | 24/54 [00:02<00:03,  8.33it/s][A
+Current trial:  46%|████▋     | 25/54 [00:02<00:03,  8.11it/s][A
+Current trial:  48%|████▊     | 26/54 [00:03<00:03,  8.23it/s][A
+Current trial:  50%|█████     | 27/54 [00:03<00:03,  8.20it/s][A
+Current trial:  52%|█████▏    | 28/54 [00:03<00:03,  8.24it/s][A
+Current trial:  54%|█████▎    | 29/54 [00:03<00:03,  8.10it/s][A
+Current trial:  56%|█████▌    | 30/54 [00:03<00:02,  8.15it/s][A
+Current trial:  57%|█████▋    | 31/54 [00:03<00:02,  8.00it/s][A
+Current trial:  59%|█████▉    | 32/54 [00:03<00:02,  7.88it/s][A
+Current trial:  61%|██████    | 33/54 [00:03<00:02,  7.85it/s][A
+Current trial:  63%|██████▎   | 34/54 [00:04<00:02,  7.82it/s][A
+Current trial:  65%|██████▍   | 35/54 [00:04<00:02,  7.76it/s][A
+Current trial:  67%|██████▋   | 36/54 [00:04<00:02,  7.70it/s][A
+Current trial:  69%|██████▊   | 37/54 [00:04<00:02,  7.73it/s][A
+Current trial:  70%|███████   | 38/54 [00:04<00:02,  7.76it/s][A
+Current trial:  72%|███████▏  | 39/54 [00:04<00:01,  7.88it/s][A
+Current trial:  74%|███████▍  | 40/54 [00:04<00:01,  8.23it/s][A
+Current trial:  76%|███████▌  | 41/54 [00:04<00:01,  8.22it/s][A
+Current trial:  78%|███████▊  | 42/54 [00:05<00:01,  8.16it/s][A
+Current trial:  80%|███████▉  | 43/54 [00:05<00:01,  8.22it/s][A
+Current trial:  81%|████████▏ | 44/54 [00:05<00:01,  7.85it/s][A
+Current trial:  83%|████████▎ | 45/54 [00:05<00:01,  7.63it/s][A
+Current trial:  85%|████████▌ | 46/54 [00:05<00:01,  7.66it/s][A
+Current trial:  87%|████████▋ | 47/54 [00:05<00:00,  7.60it/s][A
+Current trial:  89%|████████▉ | 48/54 [00:05<00:00,  8.03it/s][A
+Current trial:  91%|█████████ | 49/54 [00:06<00:00,  8.24it/s][A
+Current trial:  93%|█████████▎| 50/54 [00:06<00:00,  8.52it/s][A
+Current trial:  94%|█████████▍| 51/54 [00:06<00:00,  8.37it/s][A
+Current trial:  96%|█████████▋| 52/54 [00:06<00:00,  8.45it/s][A
+Current trial: 100%|██████████| 54/54 [00:06<00:00,  9.28it/s][A
+                                                              [A
+Current trial:   0%|          | 0/54 [00:00<?, ?it/s][A
+Current trial:   2%|▏         | 1/54 [00:00<00:06,  7.87it/s][A
+Current trial:   4%|▎         | 2/54 [00:00<00:06,  8.09it/s][A
+Current trial:   6%|▌         | 3/54 [00:00<00:06,  8.46it/s][A
+Current trial:   9%|▉         | 5/54 [00:00<00:05,  9.68it/s][A
+Current trial:  11%|█         | 6/54 [00:00<00:05,  9.20it/s][A
+Current trial:  13%|█▎        | 7/54 [00:00<00:05,  9.06it/s][A
+Current trial:  15%|█▍        | 8/54 [00:00<00:05,  8.59it/s][A
+Current trial:  17%|█▋        | 9/54 [00:01<00:05,  8.56it/s][A
+Current trial:  19%|█▊        | 10/54 [00:01<00:05,  8.34it/s][A
+Current trial:  20%|██        | 11/54 [00:01<00:05,  8.14it/s][A
+Current trial:  22%|██▏       | 12/54 [00:01<00:05,  7.95it/s][A
+Current trial:  24%|██▍       | 13/54 [00:01<00:04,  8.28it/s][A
+Current trial:  26%|██▌       | 14/54 [00:01<00:04,  8.38it/s][A
+Current trial:  28%|██▊       | 15/54 [00:01<00:04,  8.45it/s][A
+Current trial:  30%|██▉       | 16/54 [00:01<00:04,  8.27it/s][A
+Current trial:  31%|███▏      | 17/54 [00:02<00:04,  8.14it/s][A
+Current trial:  33%|███▎      | 18/54 [00:02<00:04,  8.06it/s][A
+Current trial:  35%|███▌      | 19/54 [00:02<00:04,  8.11it/s][A
+Current trial:  37%|███▋      | 20/54 [00:02<00:04,  7.96it/s][A
+Current trial:  39%|███▉      | 21/54 [00:02<00:04,  7.95it/s][A
+Current trial:  41%|████      | 22/54 [00:02<00:04,  7.91it/s][A
+Current trial:  43%|████▎     | 23/54 [00:02<00:03,  8.17it/s][A
+Current trial:  44%|████▍     | 24/54 [00:02<00:03,  8.24it/s][A
+Current trial:  46%|████▋     | 25/54 [00:03<00:03,  8.06it/s][A
+Current trial:  48%|████▊     | 26/54 [00:03<00:03,  8.19it/s][A
+Current trial:  50%|█████     | 27/54 [00:03<00:03,  8.26it/s][A
+Current trial:  52%|█████▏    | 28/54 [00:03<00:03,  8.22it/s][A
+Current trial:  54%|█████▎    | 29/54 [00:03<00:03,  8.05it/s][A
+Current trial:  56%|█████▌    | 30/54 [00:03<00:02,  8.03it/s][A
+Current trial:  57%|█████▋    | 31/54 [00:03<00:02,  7.90it/s][A
+Current trial:  59%|█████▉    | 32/54 [00:03<00:02,  7.71it/s][A
+Current trial:  61%|██████    | 33/54 [00:04<00:02,  7.65it/s][A
+Current trial:  63%|██████▎   | 34/54 [00:04<00:02,  7.71it/s][A
+Current trial:  65%|██████▍   | 35/54 [00:04<00:02,  7.69it/s][A
+Current trial:  67%|██████▋   | 36/54 [00:04<00:02,  7.71it/s][A
+Current trial:  69%|██████▊   | 37/54 [00:04<00:02,  7.72it/s][A
+Current trial:  70%|███████   | 38/54 [00:04<00:02,  7.79it/s][A
+Current trial:  72%|███████▏  | 39/54 [00:04<00:01,  7.77it/s][A
+Current trial:  74%|███████▍  | 40/54 [00:04<00:01,  8.04it/s][A
+Current trial:  76%|███████▌  | 41/54 [00:05<00:01,  8.01it/s][A
+Current trial:  78%|███████▊  | 42/54 [00:05<00:01,  7.92it/s][A
+Current trial:  80%|███████▉  | 43/54 [00:05<00:01,  7.95it/s][A
+Current trial:  81%|████████▏ | 44/54 [00:05<00:01,  7.56it/s][A
+Current trial:  83%|████████▎ | 45/54 [00:05<00:01,  7.44it/s][A
+Current trial:  85%|████████▌ | 46/54 [00:05<00:01,  7.46it/s][A
+Current trial:  87%|████████▋ | 47/54 [00:05<00:00,  7.50it/s][A
+Current trial:  89%|████████▉ | 48/54 [00:05<00:00,  7.84it/s][A
+Current trial:  91%|█████████ | 49/54 [00:06<00:00,  8.08it/s][A
+Current trial:  93%|█████████▎| 50/54 [00:06<00:00,  8.32it/s][A
+Current trial:  94%|█████████▍| 51/54 [00:06<00:00,  8.19it/s][A
+Current trial:  96%|█████████▋| 52/54 [00:06<00:00,  8.21it/s][A
+Current trial: 100%|██████████| 54/54 [00:06<00:00,  9.00it/s][A
+                                                              [A
+Current trial:   0%|          | 0/54 [00:00<?, ?it/s][A
+Current trial:   2%|▏         | 1/54 [00:00<00:06,  8.29it/s][A
+Current trial:   4%|▎         | 2/54 [00:00<00:06,  8.59it/s][A
+Current trial:   6%|▌         | 3/54 [00:00<00:05,  8.97it/s][A
+Current trial:   9%|▉         | 5/54 [00:00<00:04, 10.36it/s][A
+Current trial:  13%|█▎        | 7/54 [00:00<00:04,  9.65it/s][A
+Current trial:  15%|█▍        | 8/54 [00:00<00:05,  9.17it/s][A
+Current trial:  17%|█▋        | 9/54 [00:00<00:04,  9.04it/s][A
+Current trial:  19%|█▊        | 10/54 [00:01<00:04,  8.82it/s][A
+Current trial:  20%|██        | 11/54 [00:01<00:04,  8.63it/s][A
+Current trial:  22%|██▏       | 12/54 [00:01<00:05,  8.36it/s][A
+Current trial:  24%|██▍       | 13/54 [00:01<00:04,  8.71it/s][A
+Current trial:  26%|██▌       | 14/54 [00:01<00:04,  8.82it/s][A
+Current trial:  28%|██▊       | 15/54 [00:01<00:04,  8.86it/s][A
+Current trial:  30%|██▉       | 16/54 [00:01<00:04,  8.63it/s][A
+Current trial:  31%|███▏      | 17/54 [00:01<00:04,  8.49it/s][A
+Current trial:  33%|███▎      | 18/54 [00:02<00:04,  8.33it/s][A
+Current trial:  35%|███▌      | 19/54 [00:02<00:04,  8.41it/s][A
+Current trial:  37%|███▋      | 20/54 [00:02<00:04,  8.25it/s][A
+Current trial:  39%|███▉      | 21/54 [00:02<00:04,  8.23it/s][A
+Current trial:  41%|████      | 22/54 [00:02<00:03,  8.18it/s][A
+Current trial:  43%|████▎     | 23/54 [00:02<00:03,  8.45it/s][A
+Current trial:  44%|████▍     | 24/54 [00:02<00:03,  8.48it/s][A
+Current trial:  46%|████▋     | 25/54 [00:02<00:03,  8.26it/s][A
+Current trial:  48%|████▊     | 26/54 [00:03<00:03,  8.37it/s][A
+Current trial:  50%|█████     | 27/54 [00:03<00:03,  8.50it/s][A
+Current trial:  52%|█████▏    | 28/54 [00:03<00:03,  8.48it/s][A
+Current trial:  54%|█████▎    | 29/54 [00:03<00:03,  8.29it/s][A
+Current trial:  56%|█████▌    | 30/54 [00:03<00:02,  8.30it/s][A
+Current trial:  57%|█████▋    | 31/54 [00:03<00:02,  8.15it/s][A
+Current trial:  59%|█████▉    | 32/54 [00:03<00:02,  8.02it/s][A
+Current trial:  61%|██████    | 33/54 [00:03<00:02,  7.97it/s][A
+Current trial:  63%|██████▎   | 34/54 [00:03<00:02,  8.07it/s][A
+Current trial:  65%|██████▍   | 35/54 [00:04<00:02,  8.11it/s][A
+Current trial:  67%|██████▋   | 36/54 [00:04<00:02,  8.13it/s][A
+Current trial:  69%|██████▊   | 37/54 [00:04<00:02,  8.06it/s][A
+Current trial:  70%|███████   | 38/54 [00:04<00:01,  8.18it/s][A
+Current trial:  72%|███████▏  | 39/54 [00:04<00:01,  8.21it/s][A
+Current trial:  74%|███████▍  | 40/54 [00:04<00:01,  8.45it/s][A
+Current trial:  76%|███████▌  | 41/54 [00:04<00:01,  8.37it/s][A
+Current trial:  78%|███████▊  | 42/54 [00:04<00:01,  8.27it/s][A
+Current trial:  80%|███████▉  | 43/54 [00:05<00:01,  8.31it/s][A
+Current trial:  81%|████████▏ | 44/54 [00:05<00:01,  7.89it/s][A
+Current trial:  83%|████████▎ | 45/54 [00:05<00:01,  7.68it/s][A
+Current trial:  85%|████████▌ | 46/54 [00:05<00:01,  7.72it/s][A
+Current trial:  87%|████████▋ | 47/54 [00:05<00:00,  7.72it/s][A
+Current trial:  89%|████████▉ | 48/54 [00:05<00:00,  8.09it/s][A
+Current trial:  91%|█████████ | 49/54 [00:05<00:00,  8.29it/s][A
+Current trial:  93%|█████████▎| 50/54 [00:05<00:00,  8.54it/s][A
+Current trial:  94%|█████████▍| 51/54 [00:06<00:00,  8.40it/s][A
+Current trial:  96%|█████████▋| 52/54 [00:06<00:00,  8.49it/s][A
+Current trial: 100%|██████████| 54/54 [00:06<00:00,  9.35it/s][A
+                                                              [A
+Current trial:   0%|          | 0/54 [00:00<?, ?it/s][A
+Current trial:   2%|▏         | 1/54 [00:00<00:07,  7.40it/s][A
+Current trial:   4%|▎         | 2/54 [00:00<00:06,  7.68it/s][A
+Current trial:   6%|▌         | 3/54 [00:00<00:06,  8.04it/s][A
+Current trial:   9%|▉         | 5/54 [00:00<00:05,  9.30it/s][A
+Current trial:  11%|█         | 6/54 [00:00<00:05,  8.82it/s][A
+Current trial:  13%|█▎        | 7/54 [00:00<00:05,  8.69it/s][A
+Current trial:  15%|█▍        | 8/54 [00:00<00:05,  8.21it/s][A
+Current trial:  17%|█▋        | 9/54 [00:01<00:05,  8.16it/s][A
+Current trial:  19%|█▊        | 10/54 [00:01<00:05,  7.95it/s][A
+Current trial:  20%|██        | 11/54 [00:01<00:05,  7.77it/s][A
+Current trial:  22%|██▏       | 12/54 [00:01<00:05,  7.59it/s][A
+Current trial:  24%|██▍       | 13/54 [00:01<00:05,  7.91it/s][A
+Current trial:  26%|██▌       | 14/54 [00:01<00:04,  8.00it/s][A
+Current trial:  28%|██▊       | 15/54 [00:01<00:04,  8.07it/s][A
+Current trial:  30%|██▉       | 16/54 [00:01<00:04,  7.91it/s][A
+Current trial:  31%|███▏      | 17/54 [00:02<00:04,  7.79it/s][A
+Current trial:  33%|███▎      | 18/54 [00:02<00:04,  7.69it/s][A
+Current trial:  35%|███▌      | 19/54 [00:02<00:04,  7.74it/s][A
+Current trial:  37%|███▋      | 20/54 [00:02<00:04,  7.61it/s][A
+Current trial:  39%|███▉      | 21/54 [00:02<00:04,  7.59it/s][A
+Current trial:  41%|████      | 22/54 [00:02<00:04,  7.54it/s][A
+Current trial:  43%|████▎     | 23/54 [00:02<00:03,  7.78it/s][A
+Current trial:  44%|████▍     | 24/54 [00:03<00:03,  7.87it/s][A
+Current trial:  46%|████▋     | 25/54 [00:03<00:03,  7.70it/s][A
+Current trial:  48%|████▊     | 26/54 [00:03<00:03,  7.81it/s][A
+Current trial:  50%|█████     | 27/54 [00:03<00:03,  7.89it/s][A
+Current trial:  52%|█████▏    | 28/54 [00:03<00:03,  7.83it/s][A
+Current trial:  54%|█████▎    | 29/54 [00:03<00:03,  7.66it/s][A
+Current trial:  56%|█████▌    | 30/54 [00:03<00:03,  7.65it/s][A
+Current trial:  57%|█████▋    | 31/54 [00:03<00:03,  7.52it/s][A
+Current trial:  59%|█████▉    | 32/54 [00:04<00:03,  7.33it/s][A
+Current trial:  61%|██████    | 33/54 [00:04<00:02,  7.27it/s][A
+Current trial:  63%|██████▎   | 34/54 [00:04<00:02,  7.34it/s][A
+Current trial:  65%|██████▍   | 35/54 [00:04<00:02,  7.33it/s][A
+Current trial:  67%|██████▋   | 36/54 [00:04<00:02,  7.38it/s][A
+Current trial:  69%|██████▊   | 37/54 [00:04<00:02,  7.38it/s][A
+Current trial:  70%|███████   | 38/54 [00:04<00:02,  7.51it/s][A
+Current trial:  72%|███████▏  | 39/54 [00:05<00:01,  7.52it/s][A
+Current trial:  74%|███████▍  | 40/54 [00:05<00:01,  7.74it/s][A
+Current trial:  76%|███████▌  | 41/54 [00:05<00:01,  7.71it/s][A
+Current trial:  78%|███████▊  | 42/54 [00:05<00:01,  7.63it/s][A
+Current trial:  80%|███████▉  | 43/54 [00:05<00:01,  7.67it/s][A
+Current trial:  81%|████████▏ | 44/54 [00:05<00:01,  7.30it/s][A
+Current trial:  83%|████████▎ | 45/54 [00:05<00:01,  7.14it/s][A
+Current trial:  85%|████████▌ | 46/54 [00:05<00:01,  7.17it/s][A
+Current trial:  87%|████████▋ | 47/54 [00:06<00:00,  7.19it/s][A
+Current trial:  89%|████████▉ | 48/54 [00:06<00:00,  7.54it/s][A
+Current trial:  91%|█████████ | 49/54 [00:06<00:00,  7.75it/s][A
+Current trial:  93%|█████████▎| 50/54 [00:06<00:00,  7.99it/s][A
+Current trial:  94%|█████████▍| 51/54 [00:06<00:00,  7.84it/s][A
+Current trial:  96%|█████████▋| 52/54 [00:06<00:00,  7.87it/s][A
+Current trial: 100%|██████████| 54/54 [00:06<00:00,  8.64it/s][A
+                                                              [A
+Current trial:   0%|          | 0/54 [00:00<?, ?it/s][A
+Current trial:   2%|▏         | 1/54 [00:00<00:06,  7.59it/s][A
+Current trial:   4%|▎         | 2/54 [00:00<00:06,  7.65it/s][A
+Current trial:   6%|▌         | 3/54 [00:00<00:06,  8.02it/s][A
+Current trial:   9%|▉         | 5/54 [00:00<00:05,  9.37it/s][A
+Current trial:  11%|█         | 6/54 [00:00<00:05,  8.91it/s][A
+Current trial:  13%|█▎        | 7/54 [00:00<00:05,  8.72it/s][A
+Current trial:  15%|█▍        | 8/54 [00:00<00:05,  8.23it/s][A
+Current trial:  17%|█▋        | 9/54 [00:01<00:05,  8.16it/s][A
+Current trial:  19%|█▊        | 10/54 [00:01<00:05,  7.98it/s][A
+Current trial:  20%|██        | 11/54 [00:01<00:05,  7.82it/s][A
+Current trial:  22%|██▏       | 12/54 [00:01<00:05,  7.62it/s][A
+Current trial:  24%|██▍       | 13/54 [00:01<00:05,  7.97it/s][A
+Current trial:  26%|██▌       | 14/54 [00:01<00:04,  8.07it/s][A
+Current trial:  28%|██▊       | 15/54 [00:01<00:04,  8.15it/s][A
+Current trial:  30%|██▉       | 16/54 [00:01<00:04,  7.96it/s][A
+Current trial:  31%|███▏      | 17/54 [00:02<00:04,  7.84it/s][A
+Current trial:  33%|███▎      | 18/54 [00:02<00:04,  7.74it/s][A
+Current trial:  35%|███▌      | 19/54 [00:02<00:04,  7.85it/s][A
+Current trial:  37%|███▋      | 20/54 [00:02<00:04,  7.72it/s][A
+Current trial:  39%|███▉      | 21/54 [00:02<00:04,  7.69it/s][A
+Current trial:  41%|████      | 22/54 [00:02<00:04,  7.67it/s][A
+Current trial:  43%|████▎     | 23/54 [00:02<00:03,  7.89it/s][A
+Current trial:  44%|████▍     | 24/54 [00:02<00:03,  7.95it/s][A
+Current trial:  46%|████▋     | 25/54 [00:03<00:03,  7.77it/s][A
+Current trial:  48%|████▊     | 26/54 [00:03<00:03,  7.85it/s][A
+Current trial:  50%|█████     | 27/54 [00:03<00:03,  7.93it/s][A
+Current trial:  52%|█████▏    | 28/54 [00:03<00:03,  7.90it/s][A
+Current trial:  54%|█████▎    | 29/54 [00:03<00:03,  7.73it/s][A
+Current trial:  56%|█████▌    | 30/54 [00:03<00:03,  7.73it/s][A
+Current trial:  57%|█████▋    | 31/54 [00:03<00:03,  7.59it/s][A
+Current trial:  59%|█████▉    | 32/54 [00:04<00:03,  7.02it/s][A
+Current trial:  61%|██████    | 33/54 [00:04<00:02,  7.11it/s][A
+Current trial:  63%|██████▎   | 34/54 [00:04<00:02,  7.30it/s][A
+Current trial:  65%|██████▍   | 35/54 [00:04<00:02,  7.38it/s][A
+Current trial:  67%|██████▋   | 36/54 [00:04<00:02,  7.44it/s][A
+Current trial:  69%|██████▊   | 37/54 [00:04<00:02,  7.43it/s][A
+Current trial:  70%|███████   | 38/54 [00:04<00:02,  7.56it/s][A
+Current trial:  72%|███████▏  | 39/54 [00:04<00:01,  7.61it/s][A
+Current trial:  74%|███████▍  | 40/54 [00:05<00:01,  7.85it/s][A
+Current trial:  76%|███████▌  | 41/54 [00:05<00:01,  7.80it/s][A
+Current trial:  78%|███████▊  | 42/54 [00:05<00:01,  7.73it/s][A
+Current trial:  80%|███████▉  | 43/54 [00:05<00:01,  7.76it/s][A
+Current trial:  81%|████████▏ | 44/54 [00:05<00:01,  7.39it/s][A
+Current trial:  83%|████████▎ | 45/54 [00:05<00:01,  7.21it/s][A
+Current trial:  85%|████████▌ | 46/54 [00:05<00:01,  7.24it/s][A
+Current trial:  87%|████████▋ | 47/54 [00:06<00:00,  7.23it/s][A
+Current trial:  89%|████████▉ | 48/54 [00:06<00:00,  7.60it/s][A
+Current trial:  91%|█████████ | 49/54 [00:06<00:00,  7.80it/s][A
+Current trial:  93%|█████████▎| 50/54 [00:06<00:00,  8.04it/s][A
+Current trial:  94%|█████████▍| 51/54 [00:06<00:00,  7.85it/s][A
+Current trial:  96%|█████████▋| 52/54 [00:06<00:00,  7.90it/s][A
+Current trial: 100%|██████████| 54/54 [00:06<00:00,  8.68it/s][A
+                                                              [A
+Current trial:   0%|          | 0/54 [00:00<?, ?it/s][A
+Current trial:   2%|▏         | 1/54 [00:00<00:06,  7.92it/s][A
+Current trial:   4%|▎         | 2/54 [00:00<00:06,  8.21it/s][A
+Current trial:   6%|▌         | 3/54 [00:00<00:05,  8.61it/s][A
+Current trial:   9%|▉         | 5/54 [00:00<00:04,  9.93it/s][A
+Current trial:  11%|█         | 6/54 [00:00<00:05,  9.41it/s][A
+Current trial:  13%|█▎        | 7/54 [00:00<00:05,  9.22it/s][A
+Current trial:  15%|█▍        | 8/54 [00:00<00:05,  8.69it/s][A
+Current trial:  17%|█▋        | 9/54 [00:01<00:05,  8.60it/s][A
+Current trial:  19%|█▊        | 10/54 [00:01<00:05,  8.41it/s][A
+Current trial:  20%|██        | 11/54 [00:01<00:05,  8.24it/s][A
+Current trial:  22%|██▏       | 12/54 [00:01<00:05,  8.00it/s][A
+Current trial:  24%|██▍       | 13/54 [00:01<00:04,  8.37it/s][A
+Current trial:  26%|██▌       | 14/54 [00:01<00:04,  8.50it/s][A
+Current trial:  28%|██▊       | 15/54 [00:01<00:04,  8.57it/s][A
+Current trial:  30%|██▉       | 16/54 [00:01<00:04,  8.37it/s][A
+Current trial:  31%|███▏      | 17/54 [00:01<00:04,  8.21it/s][A
+Current trial:  33%|███▎      | 18/54 [00:02<00:04,  8.09it/s][A
+Current trial:  35%|███▌      | 19/54 [00:02<00:04,  8.20it/s][A
+Current trial:  37%|███▋      | 20/54 [00:02<00:04,  8.07it/s][A
+Current trial:  39%|███▉      | 21/54 [00:02<00:04,  8.04it/s][A
+Current trial:  41%|████      | 22/54 [00:02<00:03,  8.01it/s][A
+Current trial:  43%|████▎     | 23/54 [00:02<00:03,  8.27it/s][A
+Current trial:  44%|████▍     | 24/54 [00:02<00:03,  8.34it/s][A
+Current trial:  46%|████▋     | 25/54 [00:02<00:03,  8.12it/s][A
+Current trial:  48%|████▊     | 26/54 [00:03<00:03,  8.16it/s][A
+Current trial:  50%|█████     | 27/54 [00:03<00:03,  8.26it/s][A
+Current trial:  52%|█████▏    | 28/54 [00:03<00:03,  8.23it/s][A
+Current trial:  54%|█████▎    | 29/54 [00:03<00:03,  8.07it/s][A
+Current trial:  56%|█████▌    | 30/54 [00:03<00:02,  8.09it/s][A
+Current trial:  57%|█████▋    | 31/54 [00:03<00:02,  7.94it/s][A
+Current trial:  59%|█████▉    | 32/54 [00:03<00:02,  7.80it/s][A
+Current trial:  61%|██████    | 33/54 [00:03<00:02,  7.76it/s][A
+Current trial:  63%|██████▎   | 34/54 [00:04<00:02,  7.86it/s][A
+Current trial:  65%|██████▍   | 35/54 [00:04<00:02,  7.87it/s][A
+Current trial:  67%|██████▋   | 36/54 [00:04<00:02,  7.90it/s][A
+Current trial:  69%|██████▊   | 37/54 [00:04<00:02,  7.85it/s][A
+Current trial:  70%|███████   | 38/54 [00:04<00:02,  7.97it/s][A
+Current trial:  72%|███████▏  | 39/54 [00:04<00:01,  8.01it/s][A
+Current trial:  74%|███████▍  | 40/54 [00:04<00:01,  8.26it/s][A
+Current trial:  76%|███████▌  | 41/54 [00:04<00:01,  8.18it/s][A
+Current trial:  78%|███████▊  | 42/54 [00:05<00:01,  8.09it/s][A
+Current trial:  80%|███████▉  | 43/54 [00:05<00:01,  8.12it/s][A
+Current trial:  81%|████████▏ | 44/54 [00:05<00:01,  7.72it/s][A
+Current trial:  83%|████████▎ | 45/54 [00:05<00:01,  7.50it/s][A
+Current trial:  85%|████████▌ | 46/54 [00:05<00:01,  7.54it/s][A
+Current trial:  87%|████████▋ | 47/54 [00:05<00:00,  7.53it/s][A
+Current trial:  89%|████████▉ | 48/54 [00:05<00:00,  7.91it/s][A
+Current trial:  91%|█████████ | 49/54 [00:05<00:00,  8.13it/s][A
+Current trial:  93%|█████████▎| 50/54 [00:06<00:00,  8.39it/s][A
+Current trial:  94%|█████████▍| 51/54 [00:06<00:00,  8.22it/s][A
+Current trial:  96%|█████████▋| 52/54 [00:06<00:00,  8.28it/s][A
+Current trial: 100%|██████████| 54/54 [00:06<00:00,  9.13it/s][A
+                                                              [A
+Current trial:   0%|          | 0/54 [00:00<?, ?it/s][A
+Current trial:   2%|▏         | 1/54 [00:00<00:06,  7.94it/s][A
+Current trial:   4%|▎         | 2/54 [00:00<00:06,  8.00it/s][A
+Current trial:   6%|▌         | 3/54 [00:00<00:05,  8.53it/s][A
+Current trial:   9%|▉         | 5/54 [00:00<00:04,  9.80it/s][A
+Current trial:  11%|█         | 6/54 [00:00<00:05,  9.37it/s][A
+Current trial:  13%|█▎        | 7/54 [00:00<00:05,  9.21it/s][A
+Current trial:  15%|█▍        | 8/54 [00:00<00:05,  8.71it/s][A
+Current trial:  17%|█▋        | 9/54 [00:01<00:05,  8.63it/s][A
+Current trial:  19%|█▊        | 10/54 [00:01<00:05,  8.12it/s][A
+Current trial:  20%|██        | 11/54 [00:01<00:05,  8.06it/s][A
+Current trial:  22%|██▏       | 12/54 [00:01<00:05,  7.89it/s][A
+Current trial:  24%|██▍       | 13/54 [00:01<00:04,  8.33it/s][A
+Current trial:  26%|██▌       | 14/54 [00:01<00:04,  8.32it/s][A
+Current trial:  28%|██▊       | 15/54 [00:01<00:04,  8.47it/s][A
+Current trial:  30%|██▉       | 16/54 [00:01<00:04,  8.34it/s][A
+Current trial:  31%|███▏      | 17/54 [00:02<00:04,  8.19it/s][A
+Current trial:  33%|███▎      | 18/54 [00:02<00:04,  8.08it/s][A
+Current trial:  35%|███▌      | 19/54 [00:02<00:04,  8.08it/s][A
+Current trial:  37%|███▋      | 20/54 [00:02<00:04,  7.80it/s][A
+Current trial:  39%|███▉      | 21/54 [00:02<00:04,  7.55it/s][A
+Current trial:  41%|████      | 22/54 [00:02<00:04,  7.43it/s][A
+Current trial:  43%|████▎     | 23/54 [00:02<00:03,  7.83it/s][A
+Current trial:  44%|████▍     | 24/54 [00:02<00:03,  8.01it/s][A
+Current trial:  46%|████▋     | 25/54 [00:03<00:03,  7.91it/s][A
+Current trial:  48%|████▊     | 26/54 [00:03<00:03,  8.06it/s][A
+Current trial:  50%|█████     | 27/54 [00:03<00:03,  8.21it/s][A
+Current trial:  52%|█████▏    | 28/54 [00:03<00:03,  8.04it/s][A
+Current trial:  54%|█████▎    | 29/54 [00:03<00:03,  7.95it/s][A
+Current trial:  56%|█████▌    | 30/54 [00:03<00:03,  7.87it/s][A
+Current trial:  57%|█████▋    | 31/54 [00:03<00:02,  7.81it/s][A
+Current trial:  59%|█████▉    | 32/54 [00:03<00:02,  7.73it/s][A
+Current trial:  61%|██████    | 33/54 [00:04<00:02,  7.71it/s][A
+Current trial:  63%|██████▎   | 34/54 [00:04<00:02,  7.69it/s][A
+Current trial:  65%|██████▍   | 35/54 [00:04<00:02,  7.65it/s][A
+Current trial:  67%|██████▋   | 36/54 [00:04<00:02,  7.76it/s][A
+Current trial:  69%|██████▊   | 37/54 [00:04<00:02,  7.74it/s][A
+Current trial:  70%|███████   | 38/54 [00:04<00:02,  7.89it/s][A
+Current trial:  72%|███████▏  | 39/54 [00:04<00:01,  7.81it/s][A
+Current trial:  74%|███████▍  | 40/54 [00:04<00:01,  8.16it/s][A
+Current trial:  76%|███████▌  | 41/54 [00:05<00:01,  8.00it/s][A
+Current trial:  78%|███████▊  | 42/54 [00:05<00:01,  7.98it/s][A
+Current trial:  80%|███████▉  | 43/54 [00:05<00:01,  8.08it/s][A
+Current trial:  81%|████████▏ | 44/54 [00:05<00:01,  7.73it/s][A
+Current trial:  83%|████████▎ | 45/54 [00:05<00:01,  7.54it/s][A
+Current trial:  85%|████████▌ | 46/54 [00:05<00:01,  7.56it/s][A
+Current trial:  87%|████████▋ | 47/54 [00:05<00:00,  7.57it/s][A
+Current trial:  89%|████████▉ | 48/54 [00:05<00:00,  7.98it/s][A
+Current trial:  91%|█████████ | 49/54 [00:06<00:00,  8.18it/s][A
+Current trial:  93%|█████████▎| 50/54 [00:06<00:00,  8.45it/s][A
+Current trial:  94%|█████████▍| 51/54 [00:06<00:00,  8.30it/s][A
+Current trial:  96%|█████████▋| 52/54 [00:06<00:00,  8.38it/s][A
+Current trial: 100%|██████████| 54/54 [00:06<00:00,  9.21it/s][A
+                                                              [A
+Current trial:   0%|          | 0/54 [00:00<?, ?it/s][A
+Current trial:   2%|▏         | 1/54 [00:00<00:09,  5.51it/s][A
+Current trial:   4%|▎         | 2/54 [00:00<00:10,  4.82it/s][A
+Current trial:   6%|▌         | 3/54 [00:00<00:10,  4.91it/s][A
+Current trial:   7%|▋         | 4/54 [00:00<00:08,  5.90it/s][A
+Current trial:   9%|▉         | 5/54 [00:00<00:08,  5.91it/s][A
+Current trial:  11%|█         | 6/54 [00:01<00:08,  5.49it/s][A
+Current trial:  13%|█▎        | 7/54 [00:01<00:08,  5.54it/s][A
+Current trial:  15%|█▍        | 8/54 [00:01<00:08,  5.64it/s][A
+Current trial:  17%|█▋        | 9/54 [00:01<00:07,  5.73it/s][A
+Current trial:  19%|█▊        | 10/54 [00:01<00:08,  5.37it/s][A
+Current trial:  20%|██        | 11/54 [00:02<00:08,  5.28it/s][A
+Current trial:  22%|██▏       | 12/54 [00:02<00:08,  5.07it/s][A
+Current trial:  24%|██▍       | 13/54 [00:02<00:08,  5.01it/s][A
+Current trial:  26%|██▌       | 14/54 [00:02<00:07,  5.03it/s][A
+Current trial:  28%|██▊       | 15/54 [00:02<00:07,  5.18it/s][A
+Current trial:  30%|██▉       | 16/54 [00:03<00:07,  5.26it/s][A
+Current trial:  31%|███▏      | 17/54 [00:03<00:06,  5.51it/s][A
+Current trial:  33%|███▎      | 18/54 [00:03<00:06,  5.77it/s][A
+Current trial:  35%|███▌      | 19/54 [00:03<00:06,  5.26it/s][A
+Current trial:  37%|███▋      | 20/54 [00:03<00:06,  5.46it/s][A
+Current trial:  39%|███▉      | 21/54 [00:03<00:06,  5.15it/s][A
+Current trial:  41%|████      | 22/54 [00:04<00:06,  5.21it/s][A
+Current trial:  43%|████▎     | 23/54 [00:04<00:05,  5.62it/s][A
+Current trial:  44%|████▍     | 24/54 [00:04<00:05,  5.78it/s][A
+Current trial:  46%|████▋     | 25/54 [00:04<00:04,  5.82it/s][A
+Current trial:  48%|████▊     | 26/54 [00:04<00:04,  6.07it/s][A
+Current trial:  50%|█████     | 27/54 [00:04<00:04,  6.09it/s][A
+Current trial:  52%|█████▏    | 28/54 [00:05<00:04,  5.90it/s][A
+Current trial:  54%|█████▎    | 29/54 [00:05<00:04,  5.91it/s][A
+Current trial:  56%|█████▌    | 30/54 [00:05<00:04,  5.65it/s][A
+Current trial:  57%|█████▋    | 31/54 [00:05<00:03,  5.84it/s][A
+Current trial:  59%|█████▉    | 32/54 [00:05<00:03,  5.79it/s][A
+Current trial:  61%|██████    | 33/54 [00:05<00:03,  5.52it/s][A
+Current trial:  63%|██████▎   | 34/54 [00:06<00:03,  5.63it/s][A
+Current trial:  65%|██████▍   | 35/54 [00:06<00:03,  5.41it/s][A
+Current trial:  67%|██████▋   | 36/54 [00:06<00:03,  5.70it/s][A
+Current trial:  69%|██████▊   | 37/54 [00:06<00:02,  5.97it/s][A
+Current trial:  70%|███████   | 38/54 [00:06<00:02,  5.72it/s][A
+Current trial:  72%|███████▏  | 39/54 [00:07<00:02,  5.50it/s][A
+Current trial:  74%|███████▍  | 40/54 [00:07<00:02,  5.03it/s][A
+Current trial:  76%|███████▌  | 41/54 [00:07<00:02,  5.13it/s][A
+Current trial:  78%|███████▊  | 42/54 [00:07<00:02,  5.33it/s][A
+Current trial:  80%|███████▉  | 43/54 [00:07<00:01,  5.60it/s][A
+Current trial:  81%|████████▏ | 44/54 [00:07<00:01,  5.53it/s][A
+Current trial:  83%|████████▎ | 45/54 [00:08<00:01,  5.52it/s][A
+Current trial:  85%|████████▌ | 46/54 [00:08<00:01,  5.64it/s][A
+Current trial:  87%|████████▋ | 47/54 [00:08<00:01,  5.58it/s][A
+Current trial:  89%|████████▉ | 48/54 [00:08<00:01,  5.60it/s][A
+Current trial:  91%|█████████ | 49/54 [00:08<00:00,  5.96it/s][A
+Current trial:  93%|█████████▎| 50/54 [00:09<00:00,  5.90it/s][A
+Current trial:  94%|█████████▍| 51/54 [00:09<00:00,  5.67it/s][A
+Current trial:  96%|█████████▋| 52/54 [00:09<00:00,  5.54it/s][A
+Current trial:  98%|█████████▊| 53/54 [00:09<00:00,  6.06it/s][A
+Current trial: 100%|██████████| 54/54 [00:09<00:00,  5.83it/s][A
+                                                              [A
+Current trial:   0%|          | 0/54 [00:00<?, ?it/s][A
+Current trial:   2%|▏         | 1/54 [00:00<00:09,  5.37it/s][A
+Current trial:   4%|▎         | 2/54 [00:00<00:10,  4.77it/s][A
+Current trial:   6%|▌         | 3/54 [00:00<00:10,  4.78it/s][A
+Current trial:   7%|▋         | 4/54 [00:00<00:08,  5.65it/s][A
+Current trial:   9%|▉         | 5/54 [00:00<00:08,  5.74it/s][A
+Current trial:  11%|█         | 6/54 [00:01<00:08,  5.35it/s][A
+Current trial:  13%|█▎        | 7/54 [00:01<00:08,  5.42it/s][A
+Current trial:  15%|█▍        | 8/54 [00:01<00:08,  5.55it/s][A
+Current trial:  17%|█▋        | 9/54 [00:01<00:08,  5.56it/s][A
+Current trial:  19%|█▊        | 10/54 [00:01<00:08,  5.15it/s][A
+Current trial:  20%|██        | 11/54 [00:02<00:08,  5.08it/s][A
+Current trial:  22%|██▏       | 12/54 [00:02<00:08,  4.88it/s][A
+Current trial:  24%|██▍       | 13/54 [00:02<00:08,  4.73it/s][A
+Current trial:  26%|██▌       | 14/54 [00:02<00:08,  4.71it/s][A
+Current trial:  28%|██▊       | 15/54 [00:02<00:08,  4.82it/s][A
+Current trial:  30%|██▉       | 16/54 [00:03<00:07,  4.93it/s][A
+Current trial:  31%|███▏      | 17/54 [00:03<00:07,  5.25it/s][A
+Current trial:  33%|███▎      | 18/54 [00:03<00:06,  5.56it/s][A
+Current trial:  35%|███▌      | 19/54 [00:03<00:06,  5.14it/s][A
+Current trial:  37%|███▋      | 20/54 [00:03<00:06,  5.32it/s][A
+Current trial:  39%|███▉      | 21/54 [00:04<00:06,  5.02it/s][A
+Current trial:  41%|████      | 22/54 [00:04<00:06,  5.08it/s][A
+Current trial:  43%|████▎     | 23/54 [00:04<00:05,  5.43it/s][A
+Current trial:  44%|████▍     | 24/54 [00:04<00:05,  5.52it/s][A
+Current trial:  46%|████▋     | 25/54 [00:04<00:05,  5.58it/s][A
+Current trial:  48%|████▊     | 26/54 [00:04<00:04,  5.87it/s][A
+Current trial:  50%|█████     | 27/54 [00:05<00:04,  5.84it/s][A
+Current trial:  52%|█████▏    | 28/54 [00:05<00:04,  5.75it/s][A
+Current trial:  54%|█████▎    | 29/54 [00:05<00:04,  5.65it/s][A
+Current trial:  56%|█████▌    | 30/54 [00:05<00:04,  5.49it/s][A
+Current trial:  57%|█████▋    | 31/54 [00:05<00:04,  5.66it/s][A
+Current trial:  59%|█████▉    | 32/54 [00:06<00:03,  5.67it/s][A
+Current trial:  61%|██████    | 33/54 [00:06<00:03,  5.45it/s][A
+Current trial:  63%|██████▎   | 34/54 [00:06<00:03,  5.58it/s][A
+Current trial:  65%|██████▍   | 35/54 [00:06<00:03,  5.38it/s][A
+Current trial:  67%|██████▋   | 36/54 [00:06<00:03,  5.59it/s][A
+Current trial:  69%|██████▊   | 37/54 [00:06<00:02,  5.77it/s][A
+Current trial:  70%|███████   | 38/54 [00:07<00:02,  5.56it/s][A
+Current trial:  72%|███████▏  | 39/54 [00:07<00:02,  5.39it/s][A
+Current trial:  74%|███████▍  | 40/54 [00:07<00:02,  4.96it/s][A
+Current trial:  76%|███████▌  | 41/54 [00:07<00:02,  5.05it/s][A
+Current trial:  78%|███████▊  | 42/54 [00:07<00:02,  5.27it/s][A
+Current trial:  80%|███████▉  | 43/54 [00:08<00:02,  5.49it/s][A
+Current trial:  81%|████████▏ | 44/54 [00:08<00:01,  5.41it/s][A
+Current trial:  83%|████████▎ | 45/54 [00:08<00:01,  5.43it/s][A
+Current trial:  85%|████████▌ | 46/54 [00:08<00:01,  5.50it/s][A
+Current trial:  87%|████████▋ | 47/54 [00:08<00:01,  5.49it/s][A
+Current trial:  89%|████████▉ | 48/54 [00:08<00:01,  5.54it/s][A
+Current trial:  91%|█████████ | 49/54 [00:09<00:00,  5.91it/s][A
+Current trial:  93%|█████████▎| 50/54 [00:09<00:00,  5.86it/s][A
+Current trial:  94%|█████████▍| 51/54 [00:09<00:00,  5.65it/s][A
+Current trial:  96%|█████████▋| 52/54 [00:09<00:00,  5.53it/s][A
+Current trial:  98%|█████████▊| 53/54 [00:09<00:00,  6.05it/s][A
+Current trial: 100%|██████████| 54/54 [00:09<00:00,  5.76it/s][A
+                                                              [A
+Current trial:   0%|          | 0/54 [00:00<?, ?it/s][A
+Current trial:   2%|▏         | 1/54 [00:00<00:09,  5.44it/s][A
+Current trial:   4%|▎         | 2/54 [00:00<00:10,  4.73it/s][A
+Current trial:   6%|▌         | 3/54 [00:00<00:10,  4.95it/s][A
+Current trial:   7%|▋         | 4/54 [00:00<00:08,  5.97it/s][A
+Current trial:   9%|▉         | 5/54 [00:00<00:08,  5.95it/s][A
+Current trial:  11%|█         | 6/54 [00:01<00:08,  5.67it/s][A
+Current trial:  13%|█▎        | 7/54 [00:01<00:08,  5.74it/s][A
+Current trial:  15%|█▍        | 8/54 [00:01<00:08,  5.72it/s][A
+Current trial:  17%|█▋        | 9/54 [00:01<00:07,  5.67it/s][A
+Current trial:  19%|█▊        | 10/54 [00:01<00:08,  5.24it/s][A
+Current trial:  20%|██        | 11/54 [00:02<00:08,  5.19it/s][A
+Current trial:  22%|██▏       | 12/54 [00:02<00:07,  5.28it/s][A
+Current trial:  24%|██▍       | 13/54 [00:02<00:07,  5.13it/s][A
+Current trial:  26%|██▌       | 14/54 [00:02<00:07,  5.09it/s][A
+Current trial:  28%|██▊       | 15/54 [00:02<00:07,  5.25it/s][A
+Current trial:  30%|██▉       | 16/54 [00:02<00:07,  5.29it/s][A
+Current trial:  31%|███▏      | 17/54 [00:03<00:06,  5.66it/s][A
+Current trial:  33%|███▎      | 18/54 [00:03<00:06,  5.80it/s][A
+Current trial:  35%|███▌      | 19/54 [00:03<00:06,  5.28it/s][A
+Current trial:  37%|███▋      | 20/54 [00:03<00:06,  5.39it/s][A
+Current trial:  39%|███▉      | 21/54 [00:03<00:06,  5.38it/s][A
+Current trial:  41%|████      | 22/54 [00:04<00:06,  5.33it/s][A
+Current trial:  43%|████▎     | 23/54 [00:04<00:05,  5.73it/s][A
+Current trial:  44%|████▍     | 24/54 [00:04<00:05,  5.85it/s][A
+Current trial:  46%|████▋     | 25/54 [00:04<00:04,  6.05it/s][A
+Current trial:  48%|████▊     | 26/54 [00:04<00:04,  6.26it/s][A
+Current trial:  50%|█████     | 27/54 [00:04<00:04,  6.36it/s][A
+Current trial:  52%|█████▏    | 28/54 [00:04<00:04,  6.46it/s][A
+Current trial:  54%|█████▎    | 29/54 [00:05<00:03,  6.27it/s][A
+Current trial:  56%|█████▌    | 30/54 [00:05<00:03,  6.07it/s][A
+Current trial:  57%|█████▋    | 31/54 [00:05<00:03,  6.28it/s][A
+Current trial:  59%|█████▉    | 32/54 [00:05<00:03,  5.99it/s][A
+Current trial:  61%|██████    | 33/54 [00:05<00:03,  5.70it/s][A
+Current trial:  63%|██████▎   | 34/54 [00:06<00:03,  5.80it/s][A
+Current trial:  65%|██████▍   | 35/54 [00:06<00:03,  5.36it/s][A
+Current trial:  67%|██████▋   | 36/54 [00:06<00:03,  5.74it/s][A
+Current trial:  69%|██████▊   | 37/54 [00:06<00:02,  6.14it/s][A
+Current trial:  70%|███████   | 38/54 [00:06<00:02,  6.13it/s][A
+Current trial:  72%|███████▏  | 39/54 [00:06<00:02,  5.81it/s][A
+Current trial:  74%|███████▍  | 40/54 [00:07<00:02,  5.05it/s][A
+Current trial:  76%|███████▌  | 41/54 [00:07<00:02,  5.10it/s][A
+Current trial:  78%|███████▊  | 42/54 [00:07<00:02,  5.19it/s][A
+Current trial:  80%|███████▉  | 43/54 [00:07<00:01,  5.62it/s][A
+Current trial:  81%|████████▏ | 44/54 [00:07<00:01,  5.68it/s][A
+Current trial:  83%|████████▎ | 45/54 [00:07<00:01,  5.89it/s][A
+Current trial:  85%|████████▌ | 46/54 [00:08<00:01,  6.03it/s][A
+Current trial:  87%|████████▋ | 47/54 [00:08<00:01,  6.14it/s][A
+Current trial:  89%|████████▉ | 48/54 [00:08<00:00,  6.04it/s][A
+Current trial:  91%|█████████ | 49/54 [00:08<00:00,  6.39it/s][A
+Current trial:  93%|█████████▎| 50/54 [00:08<00:00,  6.05it/s][A
+Current trial:  94%|█████████▍| 51/54 [00:08<00:00,  5.82it/s][A
+Current trial:  96%|█████████▋| 52/54 [00:09<00:00,  5.69it/s][A
+Current trial:  98%|█████████▊| 53/54 [00:09<00:00,  6.29it/s][A
+Current trial: 100%|██████████| 54/54 [00:09<00:00,  6.08it/s][A
+                                                              [A
+Current trial:   0%|          | 0/54 [00:00<?, ?it/s][A
+Current trial:   2%|▏         | 1/54 [00:00<00:07,  7.00it/s][A
+Current trial:   4%|▎         | 2/54 [00:00<00:08,  6.06it/s][A
+Current trial:   6%|▌         | 3/54 [00:00<00:08,  6.06it/s][A
+Current trial:   7%|▋         | 4/54 [00:00<00:07,  7.13it/s][A
+Current trial:   9%|▉         | 5/54 [00:00<00:06,  7.43it/s][A
+Current trial:  11%|█         | 6/54 [00:00<00:06,  7.04it/s][A
+Current trial:  13%|█▎        | 7/54 [00:00<00:06,  7.33it/s][A
+Current trial:  15%|█▍        | 8/54 [00:01<00:06,  7.17it/s][A
+Current trial:  17%|█▋        | 9/54 [00:01<00:06,  7.30it/s][A
+Current trial:  19%|█▊        | 10/54 [00:01<00:06,  6.76it/s][A
+Current trial:  20%|██        | 11/54 [00:01<00:06,  6.75it/s][A
+Current trial:  22%|██▏       | 12/54 [00:01<00:06,  6.92it/s][A
+Current trial:  24%|██▍       | 13/54 [00:01<00:06,  6.77it/s][A
+Current trial:  26%|██▌       | 14/54 [00:02<00:06,  6.42it/s][A
+Current trial:  28%|██▊       | 15/54 [00:02<00:06,  6.35it/s][A
+Current trial:  30%|██▉       | 16/54 [00:02<00:05,  6.35it/s][A
+Current trial:  31%|███▏      | 17/54 [00:02<00:05,  6.72it/s][A
+Current trial:  33%|███▎      | 18/54 [00:02<00:05,  6.90it/s][A
+Current trial:  35%|███▌      | 19/54 [00:02<00:05,  6.34it/s][A
+Current trial:  37%|███▋      | 20/54 [00:02<00:05,  6.42it/s][A
+Current trial:  39%|███▉      | 21/54 [00:03<00:05,  6.32it/s][A
+Current trial:  41%|████      | 22/54 [00:03<00:05,  6.20it/s][A
+Current trial:  43%|████▎     | 23/54 [00:03<00:04,  6.68it/s][A
+Current trial:  44%|████▍     | 24/54 [00:03<00:04,  7.04it/s][A
+Current trial:  46%|████▋     | 25/54 [00:03<00:04,  7.18it/s][A
+Current trial:  48%|████▊     | 26/54 [00:03<00:03,  7.51it/s][A
+Current trial:  50%|█████     | 27/54 [00:03<00:03,  7.36it/s][A
+Current trial:  52%|█████▏    | 28/54 [00:04<00:03,  7.32it/s][A
+Current trial:  54%|█████▎    | 29/54 [00:04<00:03,  7.31it/s][A
+Current trial:  56%|█████▌    | 30/54 [00:04<00:03,  6.97it/s][A
+Current trial:  57%|█████▋    | 31/54 [00:04<00:03,  7.17it/s][A
+Current trial:  59%|█████▉    | 32/54 [00:04<00:03,  6.95it/s][A
+Current trial:  61%|██████    | 33/54 [00:04<00:03,  6.68it/s][A
+Current trial:  63%|██████▎   | 34/54 [00:04<00:02,  6.72it/s][A
+Current trial:  65%|██████▍   | 35/54 [00:05<00:03,  6.27it/s][A
+Current trial:  67%|██████▋   | 36/54 [00:05<00:02,  6.62it/s][A
+Current trial:  69%|██████▊   | 37/54 [00:05<00:02,  6.94it/s][A
+Current trial:  70%|███████   | 38/54 [00:05<00:02,  6.91it/s][A
+Current trial:  72%|███████▏  | 39/54 [00:05<00:02,  6.89it/s][A
+Current trial:  74%|███████▍  | 40/54 [00:05<00:02,  6.59it/s][A
+Current trial:  76%|███████▌  | 41/54 [00:06<00:01,  6.88it/s][A
+Current trial:  78%|███████▊  | 42/54 [00:06<00:01,  6.88it/s][A
+Current trial:  80%|███████▉  | 43/54 [00:06<00:01,  7.06it/s][A
+Current trial:  81%|████████▏ | 44/54 [00:06<00:01,  6.94it/s][A
+Current trial:  83%|████████▎ | 45/54 [00:06<00:01,  7.00it/s][A
+Current trial:  85%|████████▌ | 46/54 [00:06<00:01,  7.20it/s][A
+Current trial:  87%|████████▋ | 47/54 [00:06<00:00,  7.21it/s][A
+Current trial:  89%|████████▉ | 48/54 [00:06<00:00,  7.13it/s][A
+Current trial:  91%|█████████ | 49/54 [00:07<00:00,  7.55it/s][A
+Current trial:  93%|█████████▎| 50/54 [00:07<00:00,  7.40it/s][A
+Current trial:  94%|█████████▍| 51/54 [00:07<00:00,  6.93it/s][A
+Current trial:  96%|█████████▋| 52/54 [00:07<00:00,  6.73it/s][A
+Current trial: 100%|██████████| 54/54 [00:07<00:00,  7.28it/s][A
+                                                              [A
+Current trial:   0%|          | 0/54 [00:00<?, ?it/s][A
+Current trial:   2%|▏         | 1/54 [00:00<00:07,  7.56it/s][A
+Current trial:   4%|▎         | 2/54 [00:00<00:07,  7.10it/s][A
+Current trial:   6%|▌         | 3/54 [00:00<00:07,  7.03it/s][A
+Current trial:   9%|▉         | 5/54 [00:00<00:05,  8.47it/s][A
+Current trial:  11%|█         | 6/54 [00:00<00:05,  8.32it/s][A
+Current trial:  13%|█▎        | 7/54 [00:00<00:05,  8.48it/s][A
+Current trial:  15%|█▍        | 8/54 [00:00<00:05,  8.10it/s][A
+Current trial:  17%|█▋        | 9/54 [00:01<00:05,  8.21it/s][A
+Current trial:  19%|█▊        | 10/54 [00:01<00:05,  7.58it/s][A
+Current trial:  20%|██        | 11/54 [00:01<00:05,  7.69it/s][A
+Current trial:  22%|██▏       | 12/54 [00:01<00:05,  7.67it/s][A
+Current trial:  24%|██▍       | 13/54 [00:01<00:05,  7.59it/s][A
+Current trial:  26%|██▌       | 14/54 [00:01<00:05,  7.61it/s][A
+Current trial:  28%|██▊       | 15/54 [00:01<00:05,  7.58it/s][A
+Current trial:  30%|██▉       | 16/54 [00:02<00:05,  7.33it/s][A
+Current trial:  31%|███▏      | 17/54 [00:02<00:04,  7.47it/s][A
+Current trial:  33%|███▎      | 18/54 [00:02<00:04,  7.57it/s][A
+Current trial:  35%|███▌      | 19/54 [00:02<00:04,  7.06it/s][A
+Current trial:  37%|███▋      | 20/54 [00:02<00:04,  7.02it/s][A
+Current trial:  39%|███▉      | 21/54 [00:02<00:04,  7.19it/s][A
+Current trial:  41%|████      | 22/54 [00:02<00:04,  7.28it/s][A
+Current trial:  43%|████▎     | 23/54 [00:03<00:04,  7.72it/s][A
+Current trial:  44%|████▍     | 24/54 [00:03<00:03,  7.95it/s][A
+Current trial:  46%|████▋     | 25/54 [00:03<00:03,  7.86it/s][A
+Current trial:  48%|████▊     | 26/54 [00:03<00:03,  8.03it/s][A
+Current trial:  50%|█████     | 27/54 [00:03<00:03,  8.20it/s][A
+Current trial:  52%|█████▏    | 28/54 [00:03<00:03,  8.20it/s][A
+Current trial:  54%|█████▎    | 29/54 [00:03<00:03,  8.07it/s][A
+Current trial:  56%|█████▌    | 30/54 [00:03<00:03,  7.82it/s][A
+Current trial:  57%|█████▋    | 31/54 [00:04<00:02,  7.78it/s][A
+Current trial:  59%|█████▉    | 32/54 [00:04<00:03,  7.32it/s][A
+Current trial:  61%|██████    | 33/54 [00:04<00:02,  7.45it/s][A
+Current trial:  63%|██████▎   | 34/54 [00:04<00:02,  7.66it/s][A
+Current trial:  65%|██████▍   | 35/54 [00:04<00:02,  6.91it/s][A
+Current trial:  67%|██████▋   | 36/54 [00:04<00:02,  7.21it/s][A
+Current trial:  69%|██████▊   | 37/54 [00:04<00:02,  7.36it/s][A
+Current trial:  70%|███████   | 38/54 [00:04<00:02,  7.62it/s][A
+Current trial:  72%|███████▏  | 39/54 [00:05<00:01,  7.54it/s][A
+Current trial:  74%|███████▍  | 40/54 [00:05<00:01,  7.43it/s][A
+Current trial:  76%|███████▌  | 41/54 [00:05<00:01,  7.63it/s][A
+Current trial:  78%|███████▊  | 42/54 [00:05<00:01,  7.50it/s][A
+Current trial:  80%|███████▉  | 43/54 [00:05<00:01,  7.72it/s][A
+Current trial:  81%|████████▏ | 44/54 [00:05<00:01,  7.37it/s][A
+Current trial:  83%|████████▎ | 45/54 [00:05<00:01,  7.30it/s][A
+Current trial:  85%|████████▌ | 46/54 [00:06<00:01,  7.40it/s][A
+Current trial:  87%|████████▋ | 47/54 [00:06<00:00,  7.47it/s][A
+Current trial:  89%|████████▉ | 48/54 [00:06<00:00,  7.54it/s][A
+Current trial:  91%|█████████ | 49/54 [00:06<00:00,  7.86it/s][A
+Current trial:  93%|█████████▎| 50/54 [00:06<00:00,  7.75it/s][A
+Current trial:  94%|█████████▍| 51/54 [00:06<00:00,  7.68it/s][A
+Current trial:  96%|█████████▋| 52/54 [00:06<00:00,  7.47it/s][A
+Current trial: 100%|██████████| 54/54 [00:07<00:00,  8.43it/s][A
+                                                              [A
+Current trial:   0%|          | 0/54 [00:00<?, ?it/s][A
+Current trial:   2%|▏         | 1/54 [00:00<00:18,  2.90it/s][A
+Current trial:   4%|▎         | 2/54 [00:00<00:15,  3.27it/s][A
+Current trial:   6%|▌         | 3/54 [00:00<00:13,  3.66it/s][A
+Current trial:   7%|▋         | 4/54 [00:01<00:11,  4.32it/s][A
+Current trial:   9%|▉         | 5/54 [00:01<00:11,  4.45it/s][A
+Current trial:  11%|█         | 6/54 [00:01<00:11,  4.05it/s][A
+Current trial:  13%|█▎        | 7/54 [00:01<00:11,  3.97it/s][A
+Current trial:  15%|█▍        | 8/54 [00:02<00:13,  3.48it/s][A
+Current trial:  17%|█▋        | 9/54 [00:02<00:13,  3.35it/s][A
+Current trial:  19%|█▊        | 10/54 [00:02<00:13,  3.37it/s][A
+Current trial:  20%|██        | 11/54 [00:03<00:13,  3.30it/s][A
+Current trial:  22%|██▏       | 12/54 [00:03<00:12,  3.26it/s][A
+Current trial:  24%|██▍       | 13/54 [00:03<00:11,  3.64it/s][A
+Current trial:  26%|██▌       | 14/54 [00:03<00:10,  3.93it/s][A
+Current trial:  28%|██▊       | 15/54 [00:04<00:10,  3.90it/s][A
+Current trial:  30%|██▉       | 16/54 [00:04<00:10,  3.58it/s][A
+Current trial:  31%|███▏      | 17/54 [00:04<00:11,  3.35it/s][A
+Current trial:  33%|███▎      | 18/54 [00:05<00:11,  3.17it/s][A
+Current trial:  35%|███▌      | 19/54 [00:05<00:10,  3.34it/s][A
+Current trial:  37%|███▋      | 20/54 [00:05<00:10,  3.30it/s][A
+Current trial:  39%|███▉      | 21/54 [00:06<00:10,  3.16it/s][A
+Current trial:  41%|████      | 22/54 [00:06<00:10,  3.10it/s][A
+Current trial:  43%|████▎     | 23/54 [00:06<00:09,  3.15it/s][A
+Current trial:  44%|████▍     | 24/54 [00:06<00:09,  3.17it/s][A
+Current trial:  46%|████▋     | 25/54 [00:07<00:09,  3.08it/s][A
+Current trial:  48%|████▊     | 26/54 [00:07<00:09,  3.06it/s][A
+Current trial:  50%|█████     | 27/54 [00:07<00:08,  3.15it/s][A
+Current trial:  52%|█████▏    | 28/54 [00:08<00:08,  3.19it/s][A
+Current trial:  54%|█████▎    | 29/54 [00:08<00:07,  3.16it/s][A
+Current trial:  56%|█████▌    | 30/54 [00:08<00:07,  3.13it/s][A
+Current trial:  57%|█████▋    | 31/54 [00:09<00:07,  3.02it/s][A
+Current trial:  59%|█████▉    | 32/54 [00:09<00:07,  2.92it/s][A
+Current trial:  61%|██████    | 33/54 [00:09<00:07,  2.91it/s][A
+Current trial:  63%|██████▎   | 34/54 [00:10<00:06,  3.21it/s][A
+Current trial:  65%|██████▍   | 35/54 [00:10<00:05,  3.35it/s][A
+Current trial:  67%|██████▋   | 36/54 [00:10<00:05,  3.34it/s][A
+Current trial:  69%|██████▊   | 37/54 [00:11<00:05,  3.16it/s][A
+Current trial:  70%|███████   | 38/54 [00:11<00:04,  3.28it/s][A
+Current trial:  72%|███████▏  | 39/54 [00:11<00:04,  3.30it/s][A
+Current trial:  74%|███████▍  | 40/54 [00:11<00:03,  3.69it/s][A
+Current trial:  76%|███████▌  | 41/54 [00:12<00:03,  3.40it/s][A
+Current trial:  78%|███████▊  | 42/54 [00:12<00:03,  3.34it/s][A
+Current trial:  80%|███████▉  | 43/54 [00:12<00:03,  3.36it/s][A
+Current trial:  81%|████████▏ | 44/54 [00:13<00:03,  3.25it/s][A
+Current trial:  83%|████████▎ | 45/54 [00:13<00:02,  3.09it/s][A
+Current trial:  85%|████████▌ | 46/54 [00:13<00:02,  3.08it/s][A
+Current trial:  87%|████████▋ | 47/54 [00:14<00:02,  3.01it/s][A
+Current trial:  89%|████████▉ | 48/54 [00:14<00:01,  3.27it/s][A
+Current trial:  91%|█████████ | 49/54 [00:14<00:01,  3.36it/s][A
+Current trial:  93%|█████████▎| 50/54 [00:15<00:01,  3.45it/s][A
+Current trial:  94%|█████████▍| 51/54 [00:15<00:00,  3.29it/s][A
+Current trial:  96%|█████████▋| 52/54 [00:15<00:00,  3.37it/s][A
+Current trial:  98%|█████████▊| 53/54 [00:15<00:00,  4.02it/s][A
+Current trial: 100%|██████████| 54/54 [00:16<00:00,  3.74it/s][A
+                                                              [A
+Current trial:   0%|          | 0/54 [00:00<?, ?it/s][A
+Current trial:   2%|▏         | 1/54 [00:00<00:09,  5.59it/s][A
+Current trial:   4%|▎         | 2/54 [00:00<00:09,  5.44it/s][A
+Current trial:   6%|▌         | 3/54 [00:00<00:09,  5.22it/s][A
+Current trial:   7%|▋         | 4/54 [00:00<00:08,  6.13it/s][A
+Current trial:   9%|▉         | 5/54 [00:00<00:07,  6.27it/s][A
+Current trial:  11%|█         | 6/54 [00:01<00:07,  6.16it/s][A
+Current trial:  13%|█▎        | 7/54 [00:01<00:08,  5.85it/s][A
+Current trial:  15%|█▍        | 8/54 [00:01<00:08,  5.69it/s][A
+Current trial:  17%|█▋        | 9/54 [00:01<00:07,  5.75it/s][A
+Current trial:  19%|█▊        | 10/54 [00:01<00:07,  5.53it/s][A
+Current trial:  20%|██        | 11/54 [00:01<00:07,  5.41it/s][A
+Current trial:  22%|██▏       | 12/54 [00:02<00:08,  5.20it/s][A
+Current trial:  24%|██▍       | 13/54 [00:02<00:07,  5.33it/s][A
+Current trial:  26%|██▌       | 14/54 [00:02<00:07,  5.17it/s][A
+Current trial:  28%|██▊       | 15/54 [00:02<00:07,  5.26it/s][A
+Current trial:  30%|██▉       | 16/54 [00:02<00:07,  5.39it/s][A
+Current trial:  31%|███▏      | 17/54 [00:03<00:06,  5.44it/s][A
+Current trial:  33%|███▎      | 18/54 [00:03<00:06,  5.70it/s][A
+Current trial:  35%|███▌      | 19/54 [00:03<00:06,  5.23it/s][A
+Current trial:  37%|███▋      | 20/54 [00:03<00:06,  5.41it/s][A
+Current trial:  39%|███▉      | 21/54 [00:03<00:06,  5.34it/s][A
+Current trial:  41%|████      | 22/54 [00:04<00:06,  5.33it/s][A
+Current trial:  43%|████▎     | 23/54 [00:04<00:05,  5.48it/s][A
+Current trial:  44%|████▍     | 24/54 [00:04<00:05,  5.74it/s][A
+Current trial:  46%|████▋     | 25/54 [00:04<00:05,  5.69it/s][A
+Current trial:  48%|████▊     | 26/54 [00:04<00:04,  6.04it/s][A
+Current trial:  50%|█████     | 27/54 [00:04<00:04,  5.90it/s][A
+Current trial:  52%|█████▏    | 28/54 [00:04<00:04,  5.99it/s][A
+Current trial:  54%|█████▎    | 29/54 [00:05<00:04,  5.68it/s][A
+Current trial:  56%|█████▌    | 30/54 [00:05<00:04,  5.57it/s][A
+Current trial:  57%|█████▋    | 31/54 [00:05<00:04,  5.70it/s][A
+Current trial:  59%|█████▉    | 32/54 [00:05<00:03,  6.00it/s][A
+Current trial:  61%|██████    | 33/54 [00:05<00:03,  5.70it/s][A
+Current trial:  63%|██████▎   | 34/54 [00:06<00:03,  5.46it/s][A
+Current trial:  65%|██████▍   | 35/54 [00:06<00:03,  5.41it/s][A
+Current trial:  67%|██████▋   | 36/54 [00:06<00:03,  5.35it/s][A
+Current trial:  69%|██████▊   | 37/54 [00:06<00:02,  5.68it/s][A
+Current trial:  70%|███████   | 38/54 [00:06<00:02,  5.65it/s][A
+Current trial:  72%|███████▏  | 39/54 [00:06<00:02,  5.55it/s][A
+Current trial:  74%|███████▍  | 40/54 [00:07<00:02,  5.42it/s][A
+Current trial:  76%|███████▌  | 41/54 [00:07<00:02,  5.53it/s][A
+Current trial:  78%|███████▊  | 42/54 [00:07<00:02,  5.70it/s][A
+Current trial:  80%|███████▉  | 43/54 [00:07<00:01,  5.95it/s][A
+Current trial:  81%|████████▏ | 44/54 [00:07<00:01,  5.76it/s][A
+Current trial:  83%|████████▎ | 45/54 [00:08<00:01,  5.76it/s][A
+Current trial:  85%|████████▌ | 46/54 [00:08<00:01,  5.64it/s][A
+Current trial:  87%|████████▋ | 47/54 [00:08<00:01,  5.68it/s][A
+Current trial:  89%|████████▉ | 48/54 [00:08<00:01,  5.77it/s][A
+Current trial:  91%|█████████ | 49/54 [00:08<00:00,  6.07it/s][A
+Current trial:  93%|█████████▎| 50/54 [00:08<00:00,  5.97it/s][A
+Current trial:  94%|█████████▍| 51/54 [00:09<00:00,  5.71it/s][A
+Current trial:  96%|█████████▋| 52/54 [00:09<00:00,  5.40it/s][A
+Current trial:  98%|█████████▊| 53/54 [00:09<00:00,  6.14it/s][A
+Current trial: 100%|██████████| 54/54 [00:09<00:00,  5.60it/s][A
+                                                              [A
+Current trial:   0%|          | 0/54 [00:00<?, ?it/s][A
+Current trial:   2%|▏         | 1/54 [00:00<00:06,  7.96it/s][A
+Current trial:   4%|▎         | 2/54 [00:00<00:06,  7.92it/s][A
+Current trial:   6%|▌         | 3/54 [00:00<00:06,  8.48it/s][A
+Current trial:   9%|▉         | 5/54 [00:00<00:04,  9.95it/s][A
+Current trial:  11%|█         | 6/54 [00:00<00:05,  9.46it/s][A
+Current trial:  13%|█▎        | 7/54 [00:00<00:05,  9.28it/s][A
+Current trial:  15%|█▍        | 8/54 [00:00<00:05,  8.76it/s][A
+Current trial:  17%|█▋        | 9/54 [00:01<00:05,  8.51it/s][A
+Current trial:  19%|█▊        | 10/54 [00:01<00:05,  8.34it/s][A
+Current trial:  20%|██        | 11/54 [00:01<00:05,  8.18it/s][A
+Current trial:  22%|██▏       | 12/54 [00:01<00:05,  7.96it/s][A
+Current trial:  24%|██▍       | 13/54 [00:01<00:04,  8.34it/s][A
+Current trial:  26%|██▌       | 14/54 [00:01<00:04,  8.47it/s][A
+Current trial:  28%|██▊       | 15/54 [00:01<00:04,  8.55it/s][A
+Current trial:  30%|██▉       | 16/54 [00:01<00:04,  8.38it/s][A
+Current trial:  31%|███▏      | 17/54 [00:02<00:04,  8.06it/s][A
+Current trial:  33%|███▎      | 18/54 [00:02<00:04,  7.98it/s][A
+Current trial:  35%|███▌      | 19/54 [00:02<00:04,  8.12it/s][A
+Current trial:  37%|███▋      | 20/54 [00:02<00:04,  8.02it/s][A
+Current trial:  39%|███▉      | 21/54 [00:02<00:04,  8.02it/s][A
+Current trial:  41%|████      | 22/54 [00:02<00:04,  7.99it/s][A
+Current trial:  43%|████▎     | 23/54 [00:02<00:03,  8.25it/s][A
+Current trial:  44%|████▍     | 24/54 [00:02<00:03,  8.32it/s][A
+Current trial:  46%|████▋     | 25/54 [00:02<00:03,  8.10it/s][A
+Current trial:  48%|████▊     | 26/54 [00:03<00:03,  8.19it/s][A
+Current trial:  50%|█████     | 27/54 [00:03<00:03,  8.29it/s][A
+Current trial:  52%|█████▏    | 28/54 [00:03<00:03,  8.24it/s][A
+Current trial:  54%|█████▎    | 29/54 [00:03<00:03,  8.06it/s][A
+Current trial:  56%|█████▌    | 30/54 [00:03<00:03,  7.91it/s][A
+Current trial:  57%|█████▋    | 31/54 [00:03<00:02,  7.81it/s][A
+Current trial:  59%|█████▉    | 32/54 [00:03<00:02,  7.71it/s][A
+Current trial:  61%|██████    | 33/54 [00:04<00:02,  7.69it/s][A
+Current trial:  63%|██████▎   | 34/54 [00:04<00:02,  7.80it/s][A
+Current trial:  65%|██████▍   | 35/54 [00:04<00:02,  7.83it/s][A
+Current trial:  67%|██████▋   | 36/54 [00:04<00:02,  7.85it/s][A
+Current trial:  69%|██████▊   | 37/54 [00:04<00:02,  7.83it/s][A
+Current trial:  70%|███████   | 38/54 [00:04<00:02,  7.94it/s][A
+Current trial:  72%|███████▏  | 39/54 [00:04<00:01,  7.99it/s][A
+Current trial:  74%|███████▍  | 40/54 [00:04<00:01,  8.23it/s][A
+Current trial:  76%|███████▌  | 41/54 [00:04<00:01,  8.18it/s][A
+Current trial:  78%|███████▊  | 42/54 [00:05<00:01,  8.06it/s][A
+Current trial:  80%|███████▉  | 43/54 [00:05<00:01,  8.10it/s][A
+Current trial:  81%|████████▏ | 44/54 [00:05<00:01,  7.57it/s][A
+Current trial:  83%|████████▎ | 45/54 [00:05<00:01,  7.41it/s][A
+Current trial:  85%|████████▌ | 46/54 [00:05<00:01,  7.46it/s][A
+Current trial:  87%|████████▋ | 47/54 [00:05<00:00,  7.48it/s][A
+Current trial:  89%|████████▉ | 48/54 [00:05<00:00,  7.88it/s][A
+Current trial:  91%|█████████ | 49/54 [00:06<00:00,  7.96it/s][A
+Current trial:  93%|█████████▎| 50/54 [00:06<00:00,  8.27it/s][A
+Current trial:  94%|█████████▍| 51/54 [00:06<00:00,  7.99it/s][A
+Current trial:  96%|█████████▋| 52/54 [00:06<00:00,  8.13it/s][A
+Current trial: 100%|██████████| 54/54 [00:06<00:00,  9.01it/s][A
+                                                              [A
+Current trial:   0%|          | 0/54 [00:00<?, ?it/s][A
+Current trial:   2%|▏         | 1/54 [00:00<00:06,  7.80it/s][A
+Current trial:   4%|▎         | 2/54 [00:00<00:06,  8.08it/s][A
+Current trial:   6%|▌         | 3/54 [00:00<00:06,  8.49it/s][A
+Current trial:   9%|▉         | 5/54 [00:00<00:04,  9.86it/s][A
+Current trial:  11%|█         | 6/54 [00:00<00:05,  9.32it/s][A
+Current trial:  13%|█▎        | 7/54 [00:00<00:05,  9.13it/s][A
+Current trial:  15%|█▍        | 8/54 [00:00<00:05,  8.59it/s][A
+Current trial:  17%|█▋        | 9/54 [00:01<00:05,  8.49it/s][A
+Current trial:  19%|█▊        | 10/54 [00:01<00:05,  8.29it/s][A
+Current trial:  20%|██        | 11/54 [00:01<00:05,  8.12it/s][A
+Current trial:  22%|██▏       | 12/54 [00:01<00:05,  7.89it/s][A
+Current trial:  24%|██▍       | 13/54 [00:01<00:04,  8.25it/s][A
+Current trial:  26%|██▌       | 14/54 [00:01<00:04,  8.38it/s][A
+Current trial:  28%|██▊       | 15/54 [00:01<00:04,  8.47it/s][A
+Current trial:  30%|██▉       | 16/54 [00:01<00:04,  8.28it/s][A
+Current trial:  31%|███▏      | 17/54 [00:02<00:04,  8.12it/s][A
+Current trial:  33%|███▎      | 18/54 [00:02<00:04,  8.00it/s][A
+Current trial:  35%|███▌      | 19/54 [00:02<00:04,  8.10it/s][A
+Current trial:  37%|███▋      | 20/54 [00:02<00:04,  7.97it/s][A
+Current trial:  39%|███▉      | 21/54 [00:02<00:04,  7.94it/s][A
+Current trial:  41%|████      | 22/54 [00:02<00:04,  7.91it/s][A
+Current trial:  43%|████▎     | 23/54 [00:02<00:03,  8.16it/s][A
+Current trial:  44%|████▍     | 24/54 [00:02<00:03,  8.21it/s][A
+Current trial:  46%|████▋     | 25/54 [00:03<00:03,  8.00it/s][A
+Current trial:  48%|████▊     | 26/54 [00:03<00:03,  8.09it/s][A
+Current trial:  50%|█████     | 27/54 [00:03<00:03,  8.18it/s][A
+Current trial:  52%|█████▏    | 28/54 [00:03<00:03,  8.13it/s][A
+Current trial:  54%|█████▎    | 29/54 [00:03<00:03,  7.92it/s][A
+Current trial:  56%|█████▌    | 30/54 [00:03<00:03,  7.92it/s][A
+Current trial:  57%|█████▋    | 31/54 [00:03<00:02,  7.78it/s][A
+Current trial:  59%|█████▉    | 32/54 [00:03<00:02,  7.66it/s][A
+Current trial:  61%|██████    | 33/54 [00:04<00:02,  7.62it/s][A
+Current trial:  63%|██████▎   | 34/54 [00:04<00:02,  7.73it/s][A
+Current trial:  65%|██████▍   | 35/54 [00:04<00:02,  7.76it/s][A
+Current trial:  67%|██████▋   | 36/54 [00:04<00:02,  7.78it/s][A
+Current trial:  69%|██████▊   | 37/54 [00:04<00:02,  7.74it/s][A
+Current trial:  70%|███████   | 38/54 [00:04<00:02,  7.86it/s][A
+Current trial:  72%|███████▏  | 39/54 [00:04<00:01,  7.89it/s][A
+Current trial:  74%|███████▍  | 40/54 [00:04<00:01,  8.14it/s][A
+Current trial:  76%|███████▌  | 41/54 [00:05<00:01,  8.07it/s][A
+Current trial:  78%|███████▊  | 42/54 [00:05<00:01,  7.97it/s][A
+Current trial:  80%|███████▉  | 43/54 [00:05<00:01,  8.02it/s][A
+Current trial:  81%|████████▏ | 44/54 [00:05<00:01,  7.62it/s][A
+Current trial:  83%|████████▎ | 45/54 [00:05<00:01,  7.41it/s][A
+Current trial:  85%|████████▌ | 46/54 [00:05<00:01,  7.45it/s][A
+Current trial:  87%|████████▋ | 47/54 [00:05<00:00,  7.44it/s][A
+Current trial:  89%|████████▉ | 48/54 [00:05<00:00,  7.83it/s][A
+Current trial:  91%|█████████ | 49/54 [00:06<00:00,  8.04it/s][A
+Current trial:  93%|█████████▎| 50/54 [00:06<00:00,  8.27it/s][A
+Current trial:  94%|█████████▍| 51/54 [00:06<00:00,  8.11it/s][A
+Current trial:  96%|█████████▋| 52/54 [00:06<00:00,  8.17it/s][A
+Current trial: 100%|██████████| 54/54 [00:06<00:00,  9.01it/s][A
+                                                              [A
+Current trial:   0%|          | 0/54 [00:00<?, ?it/s][A
+Current trial:   2%|▏         | 1/54 [00:00<00:19,  2.67it/s][A
+Current trial:   4%|▎         | 2/54 [00:00<00:18,  2.78it/s][A
+Current trial:   6%|▌         | 3/54 [00:01<00:17,  2.89it/s][A
+Current trial:   7%|▋         | 4/54 [00:01<00:14,  3.49it/s][A
+Current trial:   9%|▉         | 5/54 [00:01<00:13,  3.65it/s][A
+Current trial:  11%|█         | 6/54 [00:01<00:14,  3.23it/s][A
+Current trial:  13%|█▎        | 7/54 [00:02<00:15,  3.09it/s][A
+Current trial:  15%|█▍        | 8/54 [00:02<00:15,  2.92it/s][A
+Current trial:  17%|█▋        | 9/54 [00:02<00:15,  2.92it/s][A
+Current trial:  19%|█▊        | 10/54 [00:03<00:15,  2.84it/s][A
+Current trial:  20%|██        | 11/54 [00:03<00:15,  2.72it/s][A
+Current trial:  22%|██▏       | 12/54 [00:04<00:15,  2.70it/s][A
+Current trial:  24%|██▍       | 13/54 [00:04<00:14,  2.81it/s][A
+Current trial:  26%|██▌       | 14/54 [00:04<00:14,  2.75it/s][A
+Current trial:  28%|██▊       | 15/54 [00:05<00:13,  2.81it/s][A
+Current trial:  30%|██▉       | 16/54 [00:05<00:13,  2.77it/s][A
+Current trial:  31%|███▏      | 17/54 [00:05<00:12,  2.89it/s][A
+Current trial:  33%|███▎      | 18/54 [00:06<00:12,  2.91it/s][A
+Current trial:  35%|███▌      | 19/54 [00:06<00:12,  2.85it/s][A
+Current trial:  37%|███▋      | 20/54 [00:06<00:12,  2.82it/s][A
+Current trial:  39%|███▉      | 21/54 [00:07<00:11,  2.81it/s][A
+Current trial:  41%|████      | 22/54 [00:07<00:11,  2.76it/s][A
+Current trial:  43%|████▎     | 23/54 [00:07<00:10,  2.90it/s][A
+Current trial:  44%|████▍     | 24/54 [00:08<00:10,  2.91it/s][A
+Current trial:  46%|████▋     | 25/54 [00:08<00:10,  2.88it/s][A
+Current trial:  48%|████▊     | 26/54 [00:08<00:09,  3.01it/s][A
+Current trial:  50%|█████     | 27/54 [00:09<00:09,  2.96it/s][A
+Current trial:  52%|█████▏    | 28/54 [00:09<00:08,  2.97it/s][A
+Current trial:  54%|█████▎    | 29/54 [00:09<00:08,  2.89it/s][A
+Current trial:  56%|█████▌    | 30/54 [00:10<00:08,  2.92it/s][A
+Current trial:  57%|█████▋    | 31/54 [00:10<00:08,  2.87it/s][A
+Current trial:  59%|█████▉    | 32/54 [00:11<00:07,  2.94it/s][A
+Current trial:  61%|██████    | 33/54 [00:11<00:07,  2.88it/s][A
+Current trial:  63%|██████▎   | 34/54 [00:11<00:07,  2.80it/s][A
+Current trial:  65%|██████▍   | 35/54 [00:12<00:06,  2.82it/s][A
+Current trial:  67%|██████▋   | 36/54 [00:12<00:06,  2.79it/s][A
+Current trial:  69%|██████▊   | 37/54 [00:12<00:06,  2.79it/s][A
+Current trial:  70%|███████   | 38/54 [00:13<00:05,  2.80it/s][A
+Current trial:  72%|███████▏  | 39/54 [00:13<00:05,  2.83it/s][A
+Current trial:  74%|███████▍  | 40/54 [00:13<00:05,  2.80it/s][A
+Current trial:  76%|███████▌  | 41/54 [00:14<00:04,  2.80it/s][A
+Current trial:  78%|███████▊  | 42/54 [00:14<00:04,  2.79it/s][A
+Current trial:  80%|███████▉  | 43/54 [00:14<00:03,  2.85it/s][A
+Current trial:  81%|████████▏ | 44/54 [00:15<00:03,  2.71it/s][A
+Current trial:  83%|████████▎ | 45/54 [00:15<00:03,  2.71it/s][A
+Current trial:  85%|████████▌ | 46/54 [00:16<00:02,  2.73it/s][A
+Current trial:  87%|████████▋ | 47/54 [00:16<00:02,  2.74it/s][A
+Current trial:  89%|████████▉ | 48/54 [00:16<00:02,  2.87it/s][A
+Current trial:  91%|█████████ | 49/54 [00:17<00:01,  2.99it/s][A
+Current trial:  93%|█████████▎| 50/54 [00:17<00:01,  3.04it/s][A
+Current trial:  94%|█████████▍| 51/54 [00:17<00:01,  2.93it/s][A
+Current trial:  96%|█████████▋| 52/54 [00:18<00:00,  2.88it/s][A
+Current trial:  98%|█████████▊| 53/54 [00:18<00:00,  3.45it/s][A
+Current trial: 100%|██████████| 54/54 [00:18<00:00,  3.22it/s][A
+                                                              [A
+Current trial:   0%|          | 0/54 [00:00<?, ?it/s][A
+Current trial:   2%|▏         | 1/54 [00:00<00:06,  7.78it/s][A
+Current trial:   4%|▎         | 2/54 [00:00<00:06,  8.08it/s][A
+Current trial:   6%|▌         | 3/54 [00:00<00:06,  8.49it/s][A
+Current trial:   9%|▉         | 5/54 [00:00<00:04,  9.85it/s][A
+Current trial:  11%|█         | 6/54 [00:00<00:05,  9.33it/s][A
+Current trial:  13%|█▎        | 7/54 [00:00<00:05,  9.14it/s][A
+Current trial:  15%|█▍        | 8/54 [00:00<00:05,  8.58it/s][A
+Current trial:  17%|█▋        | 9/54 [00:01<00:05,  8.47it/s][A
+Current trial:  19%|█▊        | 10/54 [00:01<00:05,  8.22it/s][A
+Current trial:  20%|██        | 11/54 [00:01<00:05,  8.04it/s][A
+Current trial:  22%|██▏       | 12/54 [00:01<00:05,  7.83it/s][A
+Current trial:  24%|██▍       | 13/54 [00:01<00:05,  8.19it/s][A
+Current trial:  26%|██▌       | 14/54 [00:01<00:04,  8.32it/s][A
+Current trial:  28%|██▊       | 15/54 [00:01<00:04,  8.37it/s][A
+Current trial:  30%|██▉       | 16/54 [00:01<00:04,  8.19it/s][A
+Current trial:  31%|███▏      | 17/54 [00:02<00:04,  8.07it/s][A
+Current trial:  33%|███▎      | 18/54 [00:02<00:04,  7.96it/s][A
+Current trial:  35%|███▌      | 19/54 [00:02<00:04,  8.07it/s][A
+Current trial:  37%|███▋      | 20/54 [00:02<00:04,  7.95it/s][A
+Current trial:  39%|███▉      | 21/54 [00:02<00:04,  7.93it/s][A
+Current trial:  41%|████      | 22/54 [00:02<00:04,  7.90it/s][A
+Current trial:  43%|████▎     | 23/54 [00:02<00:03,  8.16it/s][A
+Current trial:  44%|████▍     | 24/54 [00:02<00:03,  8.21it/s][A
+Current trial:  46%|████▋     | 25/54 [00:03<00:03,  7.97it/s][A
+Current trial:  48%|████▊     | 26/54 [00:03<00:03,  8.06it/s][A
+Current trial:  50%|█████     | 27/54 [00:03<00:03,  8.16it/s][A
+Current trial:  52%|█████▏    | 28/54 [00:03<00:03,  8.12it/s][A
+Current trial:  54%|█████▎    | 29/54 [00:03<00:03,  7.95it/s][A
+Current trial:  56%|█████▌    | 30/54 [00:03<00:03,  7.99it/s][A
+Current trial:  57%|█████▋    | 31/54 [00:03<00:02,  7.84it/s][A
+Current trial:  59%|█████▉    | 32/54 [00:03<00:02,  7.69it/s][A
+Current trial:  61%|██████    | 33/54 [00:04<00:02,  7.66it/s][A
+Current trial:  63%|██████▎   | 34/54 [00:04<00:02,  7.74it/s][A
+Current trial:  65%|██████▍   | 35/54 [00:04<00:02,  7.78it/s][A
+Current trial:  67%|██████▋   | 36/54 [00:04<00:02,  7.82it/s][A
+Current trial:  69%|██████▊   | 37/54 [00:04<00:02,  7.78it/s][A
+Current trial:  70%|███████   | 38/54 [00:04<00:02,  7.89it/s][A
+Current trial:  72%|███████▏  | 39/54 [00:04<00:01,  7.92it/s][A
+Current trial:  74%|███████▍  | 40/54 [00:04<00:01,  8.17it/s][A
+Current trial:  76%|███████▌  | 41/54 [00:05<00:01,  8.10it/s][A
+Current trial:  78%|███████▊  | 42/54 [00:05<00:01,  7.99it/s][A
+Current trial:  80%|███████▉  | 43/54 [00:05<00:01,  8.02it/s][A
+Current trial:  81%|████████▏ | 44/54 [00:05<00:01,  7.61it/s][A
+Current trial:  83%|████████▎ | 45/54 [00:05<00:01,  7.42it/s][A
+Current trial:  85%|████████▌ | 46/54 [00:05<00:01,  7.37it/s][A
+Current trial:  87%|████████▋ | 47/54 [00:05<00:00,  7.36it/s][A
+Current trial:  89%|████████▉ | 48/54 [00:05<00:00,  7.75it/s][A
+Current trial:  91%|█████████ | 49/54 [00:06<00:00,  7.97it/s][A
+Current trial:  93%|█████████▎| 50/54 [00:06<00:00,  8.24it/s][A
+Current trial:  94%|█████████▍| 51/54 [00:06<00:00,  8.09it/s][A
+Current trial:  96%|█████████▋| 52/54 [00:06<00:00,  8.14it/s][A
+Current trial: 100%|██████████| 54/54 [00:06<00:00,  8.96it/s][A
+                                                              [A
+Current trial:   0%|          | 0/54 [00:00<?, ?it/s][A
+Current trial:   2%|▏         | 1/54 [00:00<00:08,  6.18it/s][A
+Current trial:   4%|▎         | 2/54 [00:00<00:10,  5.16it/s][A
+Current trial:   6%|▌         | 3/54 [00:00<00:09,  5.52it/s][A
+Current trial:   7%|▋         | 4/54 [00:00<00:07,  6.62it/s][A
+Current trial:   9%|▉         | 5/54 [00:00<00:07,  6.79it/s][A
+Current trial:  11%|█         | 6/54 [00:00<00:07,  6.46it/s][A
+Current trial:  13%|█▎        | 7/54 [00:01<00:07,  6.50it/s][A
+Current trial:  15%|█▍        | 8/54 [00:01<00:07,  6.42it/s][A
+Current trial:  17%|█▋        | 9/54 [00:01<00:06,  6.46it/s][A
+Current trial:  19%|█▊        | 10/54 [00:01<00:07,  5.98it/s][A
+Current trial:  20%|██        | 11/54 [00:01<00:07,  6.00it/s][A
+Current trial:  22%|██▏       | 12/54 [00:01<00:07,  5.99it/s][A
+Current trial:  24%|██▍       | 13/54 [00:02<00:06,  6.01it/s][A
+Current trial:  26%|██▌       | 14/54 [00:02<00:06,  6.03it/s][A
+Current trial:  28%|██▊       | 15/54 [00:02<00:06,  6.14it/s][A
+Current trial:  30%|██▉       | 16/54 [00:02<00:06,  6.19it/s][A
+Current trial:  31%|███▏      | 17/54 [00:02<00:05,  6.44it/s][A
+Current trial:  33%|███▎      | 18/54 [00:02<00:05,  6.82it/s][A
+Current trial:  35%|███▌      | 19/54 [00:03<00:05,  6.29it/s][A
+Current trial:  37%|███▋      | 20/54 [00:03<00:05,  6.22it/s][A
+Current trial:  39%|███▉      | 21/54 [00:03<00:05,  6.13it/s][A
+Current trial:  41%|████      | 22/54 [00:03<00:05,  6.08it/s][A
+Current trial:  43%|████▎     | 23/54 [00:03<00:04,  6.38it/s][A
+Current trial:  44%|████▍     | 24/54 [00:03<00:04,  6.38it/s][A
+Current trial:  46%|████▋     | 25/54 [00:03<00:04,  6.63it/s][A
+Current trial:  48%|████▊     | 26/54 [00:04<00:03,  7.10it/s][A
+Current trial:  50%|█████     | 27/54 [00:04<00:03,  7.37it/s][A
+Current trial:  52%|█████▏    | 28/54 [00:04<00:03,  7.34it/s][A
+Current trial:  54%|█████▎    | 29/54 [00:04<00:03,  7.34it/s][A
+Current trial:  56%|█████▌    | 30/54 [00:04<00:03,  7.03it/s][A
+Current trial:  57%|█████▋    | 31/54 [00:04<00:03,  7.21it/s][A
+Current trial:  59%|█████▉    | 32/54 [00:04<00:03,  6.69it/s][A
+Current trial:  61%|██████    | 33/54 [00:05<00:03,  6.23it/s][A
+Current trial:  63%|██████▎   | 34/54 [00:05<00:03,  6.44it/s][A
+Current trial:  65%|██████▍   | 35/54 [00:05<00:03,  5.94it/s][A
+Current trial:  67%|██████▋   | 36/54 [00:05<00:02,  6.34it/s][A
+Current trial:  69%|██████▊   | 37/54 [00:05<00:02,  6.71it/s][A
+Current trial:  70%|███████   | 38/54 [00:05<00:02,  6.60it/s][A
+Current trial:  72%|███████▏  | 39/54 [00:06<00:02,  6.38it/s][A
+Current trial:  74%|███████▍  | 40/54 [00:06<00:02,  5.80it/s][A
+Current trial:  76%|███████▌  | 41/54 [00:06<00:02,  5.90it/s][A
+Current trial:  78%|███████▊  | 42/54 [00:06<00:01,  6.08it/s][A
+Current trial:  80%|███████▉  | 43/54 [00:06<00:01,  6.38it/s][A
+Current trial:  81%|████████▏ | 44/54 [00:06<00:01,  6.39it/s][A
+Current trial:  83%|████████▎ | 45/54 [00:07<00:01,  6.50it/s][A
+Current trial:  85%|████████▌ | 46/54 [00:07<00:01,  6.82it/s][A
+Current trial:  87%|████████▋ | 47/54 [00:07<00:01,  6.79it/s][A
+Current trial:  89%|████████▉ | 48/54 [00:07<00:00,  6.66it/s][A
+Current trial:  91%|█████████ | 49/54 [00:07<00:00,  7.08it/s][A
+Current trial:  93%|█████████▎| 50/54 [00:07<00:00,  6.73it/s][A
+Current trial:  94%|█████████▍| 51/54 [00:07<00:00,  6.42it/s][A
+Current trial:  96%|█████████▋| 52/54 [00:08<00:00,  6.38it/s][A
+Current trial:  98%|█████████▊| 53/54 [00:08<00:00,  7.05it/s][A
+Current trial: 100%|██████████| 54/54 [00:08<00:00,  6.80it/s][A
+                                                              [A/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/torch/nn/modules/module.py:1736: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(

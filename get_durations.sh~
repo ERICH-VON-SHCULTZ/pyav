@@ -1,0 +1,1 @@
+ls /scratch/map22-share/AVA-AVD/AVA-AVD/dataset/videos/* > allvideos.txt

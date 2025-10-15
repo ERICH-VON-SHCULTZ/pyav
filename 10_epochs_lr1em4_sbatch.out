@@ -1,0 +1,190 @@
+'AVA-AVD.SpeakerDiarization.data' found in /scratch/map22-share/pyav/database.yml does not define the 'scope' of speaker labels (file, database, or global). Setting it to 'file'.
+'AVA-AVD.SpeakerDiarization.data' found in /scratch/map22-share/pyav/database.yml does not define the 'scope' of speaker labels (file, database, or global). Setting it to 'file'.
+***************ORIGINAL MODEL****************
+Hparams
+"linear":       {'hidden_size': 128, 'num_layers': 2}
+"lstm":         {'hidden_size': 128, 'num_layers': 4, 'bidirectional': True, 'monolithic': True, 'dropout': 0.0, 'batch_first': True}
+"num_channels": 1
+"sample_rate":  16000
+"sincnet":      {'stride': 10, 'sample_rate': 16000}
+***************MODIFIED MODEL****************
+Protocol AVA-AVD.SpeakerDiarization.data does not precompute the output of torchaudio.info(): adding a 'torchaudio.info' preprocessor for you to speed up dataloaders. See pyannote.database documentation on how to do that yourself.
+┏━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name              ┃ Type       ┃ Params ┃ Mode  ┃   In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ sincnet           │ SincNet    │ 42.6 K │ train │     [1, 1, │   [1, 60, │
+│   │                   │            │        │       │    160000] │      589] │
+│ 1 │ lstm              │ LSTM       │  1.4 M │ train │   [1, 589, │ [[1, 589, │
+│   │                   │            │        │       │        60] │     256], │
+│   │                   │            │        │       │            │   [[8, 1, │
+│   │                   │            │        │       │            │ 128], [8, │
+│   │                   │            │        │       │            │ 1, 128]]] │
+│ 2 │ linear            │ ModuleList │ 49.4 K │ train │          ? │         ? │
+│ 3 │ classifier        │ Linear     │    903 │ train │   [1, 589, │  [1, 589, │
+│   │                   │            │        │       │       128] │        7] │
+│ 4 │ activation        │ LogSoftmax │      0 │ train │   [1, 589, │  [1, 589, │
+│   │                   │            │        │       │         7] │        7] │
+│ 5 │ second_input      │ Sequential │ 61.5 K │ train │   [1, 300, │  [1, 300, │
+│   │                   │            │        │       │      1024] │       60] │
+│ 6 │ merge             │ Sequential │  7.3 K │ train │   [1, 589, │  [1, 589, │
+│   │                   │            │        │       │       120] │       60] │
+│ 7 │ powerset          │ Powerset   │      0 │ train │          ? │         ? │
+│ 8 │ validation_metric │ MetricCol… │      0 │ train │          ? │         ? │
+└───┴───────────────────┴────────────┴────────┴───────┴────────────┴───────────┘
+Trainable params: 1.5 M                                                         
+Non-trainable params: 0                                                         
+Total params: 1.5 M                                                             
+Total estimated model params size (MB): 6                                       
+Modules in train mode: 33                                                       
+Modules in eval mode: 0                                                         
+Epoch 9/9  ━━━━━━━━━━━━━━━━ 218/218 0:01:30 • 0:00:00 2.44it/s v_num: 0vq2      
+                                                               DiarizationError…
+                                                               0.448            
+                                                               DiarizationError…
+                                                               0.117            
+                                                               DiarizationError…
+                                                               0.101            
+                                                               DiarizationError…
+                                                               0.230            
+Hparams
+"linear":       {'hidden_size': 128, 'num_layers': 2}
+"lstm":         {'hidden_size': 128, 'num_layers': 4, 'bidirectional': True, 'monolithic': True, 'dropout': 0.0, 'batch_first': True}
+"num_channels": 1
+"sample_rate":  16000
+"sincnet":      {'stride': 10, 'sample_rate': 16000}
+Best clustering threshold so far: 1.2311535948156873
+Best clustering threshold so far: 1.2311535948156873
+Best clustering threshold so far: 0.7745277492494682
+Best clustering threshold so far: 0.7745277492494682
+Best clustering threshold so far: 0.7745277492494682
+Best clustering threshold so far: 0.7745277492494682
+Best clustering threshold so far: 0.7745277492494682
+Best clustering threshold so far: 0.905391448625005
+Best clustering threshold so far: 0.905391448625005
+Best clustering threshold so far: 0.905391448625005
+Best clustering threshold so far: 0.905391448625005
+Best clustering threshold so far: 0.905391448625005
+Best clustering threshold so far: 0.905391448625005
+Best clustering threshold so far: 0.905391448625005
+Best clustering threshold so far: 0.905391448625005
+Best clustering threshold so far: 0.7467922063342577
+Best clustering threshold so far: 0.7467922063342577
+Best clustering threshold so far: 0.7467922063342577
+Best clustering threshold so far: 0.7467922063342577
+Best clustering threshold so far: 0.7467922063342577
+Best clustering threshold so far: 0.7467922063342577
+Best clustering threshold so far: 0.7467922063342577
+1j20qq1JyX4_c_01
+1j20qq1JyX4_c_02
+1j20qq1JyX4_c_03
+2qQs3Y9OJX0_c_01
+2qQs3Y9OJX0_c_02
+2qQs3Y9OJX0_c_03
+4ZpjKfu6Cl8_c_01
+4ZpjKfu6Cl8_c_02
+4ZpjKfu6Cl8_c_03
+5milLu-6bWI_c_01
+5milLu-6bWI_c_02
+5milLu-6bWI_c_03
+7YpF6DntOYw_c_01
+7YpF6DntOYw_c_02
+7YpF6DntOYw_c_03
+BCiuXAuCKAU_c_01
+BCiuXAuCKAU_c_02
+BCiuXAuCKAU_c_03
+HKjR70GCRPE_c_01
+HKjR70GCRPE_c_02
+HKjR70GCRPE_c_03
+IKdBLciu_-A_c_01
+IKdBLciu_-A_c_02
+IKdBLciu_-A_c_03
+KHHgQ_Pe4cI_c_01
+KHHgQ_Pe4cI_c_02
+KHHgQ_Pe4cI_c_03
+PmElx9ZVByw_c_01
+PmElx9ZVByw_c_02
+PmElx9ZVByw_c_03
+a5mEmM6w_ks_c_01
+a5mEmM6w_ks_c_02
+a5mEmM6w_ks_c_03
+kMy-6RtoOVU_c_01
+kMy-6RtoOVU_c_02
+kMy-6RtoOVU_c_03
+qrkff49p4E4_c_01
+qrkff49p4E4_c_02
+qrkff49p4E4_c_03
+zC5Fh2tTS1U_c_01
+zC5Fh2tTS1U_c_02
+zC5Fh2tTS1U_c_03
+zR725veL-DI_c_01
+zR725veL-DI_c_02
+zR725veL-DI_c_03
+IzvOYVMltkI_c_01
+IzvOYVMltkI_c_02
+IzvOYVMltkI_c_03
+UrsCy6qIGoo_c_01
+UrsCy6qIGoo_c_02
+UrsCy6qIGoo_c_03
+yn9WN9lsHRE_c_01
+yn9WN9lsHRE_c_02
+yn9WN9lsHRE_c_03
+                 diarization error rate   total correct correct false alarm false alarm missed detection missed detection confusion confusion
+                                      %                       %                       %                                 %                   %
+item                                                                                                                                         
+1j20qq1JyX4_c_01                  45.24  155.05   95.97   61.90       11.07        7.14            38.53            24.85     20.55     13.26
+1j20qq1JyX4_c_02                  44.21  227.81  143.88   63.16       16.79        7.37            63.67            27.95     20.26      8.89
+1j20qq1JyX4_c_03                  60.37  197.26   97.03   49.19       18.84        9.55            51.61            26.16     48.62     24.65
+2qQs3Y9OJX0_c_01                  80.44   89.26   53.27   59.68       35.81       40.12             3.80             4.26     32.18     36.05
+2qQs3Y9OJX0_c_02                  57.88  116.06   77.80   67.04       28.92       24.92             3.72             3.21     34.54     29.76
+2qQs3Y9OJX0_c_03                  36.76  147.43  115.84   78.57       22.61       15.33             8.59             5.83     23.00     15.60
+4ZpjKfu6Cl8_c_01                  69.10  141.59   65.96   46.59       22.21       15.69            41.97            29.64     33.66     23.77
+4ZpjKfu6Cl8_c_02                  54.14  154.92   94.24   60.83       23.19       14.97            21.03            13.58     39.64     25.59
+4ZpjKfu6Cl8_c_03                  51.98  112.29   70.36   62.66       16.44       14.64             9.20             8.19     32.73     29.15
+5milLu-6bWI_c_01                  49.71  174.41   96.76   55.48        9.04        5.18            33.70            19.32     43.95     25.20
+5milLu-6bWI_c_02                  49.30  217.06  125.08   57.62       15.04        6.93            36.28            16.71     55.70     25.66
+5milLu-6bWI_c_03                  46.78  221.49  142.56   64.36       24.69       11.15            25.89            11.69     53.04     23.95
+7YpF6DntOYw_c_01                  62.66  132.86   56.49   42.52        6.88        5.18            42.29            31.83     34.08     25.65
+7YpF6DntOYw_c_02                  59.14   54.12   24.70   45.64        2.59        4.78            12.17            22.49     17.25     31.87
+7YpF6DntOYw_c_03                  34.87   66.24   47.07   71.06        3.93        5.93             4.40             6.65     14.76     22.29
+BCiuXAuCKAU_c_01                  71.87  206.56   64.13   31.05        6.02        2.91           121.52            58.83     20.91     10.12
+BCiuXAuCKAU_c_02                  40.43  154.10  101.74   66.02        9.94        6.45            31.12            20.19     21.24     13.79
+BCiuXAuCKAU_c_03                  60.22  207.37   86.56   41.74        4.08        1.97           104.59            50.44     16.21      7.82
+HKjR70GCRPE_c_01                  39.20  146.56  108.36   73.94       19.26       13.14            21.24            14.49     16.96     11.57
+HKjR70GCRPE_c_02                  53.20  145.10   86.49   59.60       18.58       12.80            21.90            15.09     36.72     25.31
+HKjR70GCRPE_c_03                  45.81  165.78  104.86   63.25       15.03        9.07            12.62             7.61     48.30     29.14
+IKdBLciu_-A_c_01                  37.10  127.60   91.41   71.64       11.16        8.75            11.27             8.83     24.91     19.53
+IKdBLciu_-A_c_02                  68.69   95.71   37.98   39.68        8.01        8.37            34.99            36.55     22.75     23.76
+IKdBLciu_-A_c_03                  75.52   98.63   33.67   34.14        9.53        9.66            43.32            43.93     21.64     21.94
+KHHgQ_Pe4cI_c_01                  61.56  180.62   75.47   41.78        6.04        3.34            90.44            50.07     14.71      8.15
+KHHgQ_Pe4cI_c_02                  70.05  119.56   42.79   35.79        6.98        5.84            50.41            42.17     26.35     22.04
+KHHgQ_Pe4cI_c_03                  55.07  156.28   77.53   49.61        7.31        4.67            69.71            44.61      9.04      5.79
+PmElx9ZVByw_c_01                  51.05  142.53   85.42   59.93       15.66       10.99            13.27             9.31     43.84     30.76
+PmElx9ZVByw_c_02                  13.57  147.22  135.43   91.99        8.19        5.56            10.23             6.95      1.56      1.06
+PmElx9ZVByw_c_03                  42.79  120.01   75.52   62.93        6.86        5.72             9.64             8.04     34.84     29.03
+a5mEmM6w_ks_c_01                  28.10  235.73  184.94   78.46       15.46        6.56            26.77            11.36     24.02     10.19
+a5mEmM6w_ks_c_02                  42.57  185.80  117.25   63.10       10.55        5.68            28.23            15.19     40.32     21.70
+a5mEmM6w_ks_c_03                  25.19  130.15  105.13   80.77        7.75        5.96            10.57             8.12     14.46     11.11
+kMy-6RtoOVU_c_01                  56.03  185.77   95.85   51.60       14.16        7.62            61.49            33.10     28.43     15.30
+kMy-6RtoOVU_c_02                  83.43  121.57   48.39   39.81       28.25       23.24            19.84            16.32     53.34     43.88
+kMy-6RtoOVU_c_03                  60.90  111.45   64.97   58.30       21.39       19.20            17.86            16.03     28.62     25.68
+qrkff49p4E4_c_01                  19.17  147.36  123.58   83.87        4.48        3.04            15.80            10.72      7.97      5.41
+qrkff49p4E4_c_02                  13.79  139.38  125.80   90.26        5.64        4.05            10.36             7.43      3.22      2.31
+qrkff49p4E4_c_03                  37.69  160.17  109.61   68.43        9.80        6.12            14.91             9.31     35.66     22.26
+zC5Fh2tTS1U_c_01                  70.89  193.38   84.57   43.73       28.28       14.62            22.92            11.85     85.89     44.41
+zC5Fh2tTS1U_c_02                  60.18  172.54   94.84   54.97       26.14       15.15            22.79            13.21     54.91     31.82
+zC5Fh2tTS1U_c_03                  73.42  240.12   94.10   39.19       30.29       12.61            74.32            30.95     71.70     29.86
+zR725veL-DI_c_01                  30.09  190.05  142.80   75.14        9.94        5.23            31.35            16.49     15.90      8.37
+zR725veL-DI_c_02                  30.27  215.43  163.32   75.81       13.11        6.09            29.70            13.79     22.41     10.40
+zR725veL-DI_c_03                  33.63  199.67  148.78   74.51       16.25        8.14            28.31            14.18     22.59     11.31
+IzvOYVMltkI_c_01                  31.78  156.71  121.04   77.23       14.13        9.02             9.47             6.04     26.21     16.72
+IzvOYVMltkI_c_02                  50.70  191.14  121.59   63.61       27.35       14.31            13.09             6.85     56.46     29.54
+IzvOYVMltkI_c_03                  31.66  172.52  137.23   79.54       19.33       11.21             7.70             4.46     27.59     15.99
+UrsCy6qIGoo_c_01                  47.71  122.69   67.90   55.34        3.74        3.05            36.12            29.44     18.68     15.22
+UrsCy6qIGoo_c_02                  45.44  125.06   84.47   67.54       16.24       12.98            11.38             9.10     29.21     23.36
+UrsCy6qIGoo_c_03                  37.37  197.16  133.48   67.70        9.99        5.07            12.87             6.53     50.81     25.77
+yn9WN9lsHRE_c_01                  42.27  188.10  118.32   62.90        9.73        5.18            49.98            26.57     19.80     10.53
+yn9WN9lsHRE_c_02                  59.53  156.18   73.73   47.21       10.52        6.74            51.76            33.14     30.68     19.65
+yn9WN9lsHRE_c_03                  50.45  196.37  114.94   58.53       17.64        8.98            28.70            14.62     52.72     26.85
+TOTAL                             48.46 8556.01 5191.03   60.67      780.85        9.13          1679.41            19.63   1685.58     19.70
+[1;34mwandb[0m: 🚀 View run [33m10_epochs_lr1em4_sbatch[0m at: [34mhttps://wandb.ai/pichenygroup/testruns/runs/eyah0vq2[0m
+[1;34mwandb[0m: Find logs at: [1;35mepoch1test/wandb/run-20250113_122032-eyah0vq2/logs[0m

@@ -1,0 +1,948 @@
+/bin/bash: line 4: 2: command not found
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/registry.py:502: UserWarning: Replacing existing AVA-AVD.SpeakerDiarization.data protocol by the one defined in '/scratch/map22-share/pyav/database.new2.yml'.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/audio/tasks/segmentation/speaker_diarization2.py:181: UserWarning: `loss` has been deprecated and has no effect.
+  warnings.warn("`loss` has been deprecated and has no effect.")
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+You are using a CUDA device ('NVIDIA H100 80GB HBM3') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 1 processes
+----------------------------------------------------------------------------------------------------
+
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: picheny (pichenygroup). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.19.1
+wandb: Run data is saved locally in /scratch/map22-share/pyav/experiments/wandb/run-20251006_134602-4i6qwnyk
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run model_0_dihard_50e_lr1em4_2
+wandb: ⭐️ View project at https://wandb.ai/pichenygroup/both13
+wandb: 🚀 View run at https://wandb.ai/pichenygroup/both13/runs/4i6qwnyk
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+SLURM auto-requeueing enabled. Setting signal handlers.
+/ext3/miniforge3/lib/python3.12/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:424: The 'val_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=15` in the `DataLoader` to improve performance.
+/ext3/miniforge3/lib/python3.12/site-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:431: It is recommended to use `self.log('loss/val/segmentation', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/ext3/miniforge3/lib/python3.12/site-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:431: It is recommended to use `self.log('loss/val', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/ext3/miniforge3/lib/python3.12/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:424: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=15` in the `DataLoader` to improve performance.
+/ext3/miniforge3/lib/python3.12/site-packages/pytorch_lightning/utilities/data.py:122: Your `IterableDataset` has `__len__` defined. In combination with multi-process data loading (when num_workers > 1), `__len__` could be inaccurate if each worker is not configured independently to avoid having duplicate data.
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+[rank0]:[W1006 13:46:09.431377242 reducer.cpp:1400] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+/ext3/miniforge3/lib/python3.12/site-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:431: It is recommended to use `self.log('loss/train/segmentation', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/ext3/miniforge3/lib/python3.12/site-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:431: It is recommended to use `self.log('loss/train', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+Epoch 0, global step 218: 'DiarizationErrorRate' reached 0.69262 (best 0.69262), saving model to '/scratch/map22-share/pyav/experiments/both13/model_0_dihard_50e_lr1em4_2/epoch=0.ckpt' as top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 1, global step 436: 'DiarizationErrorRate' reached 0.55341 (best 0.55341), saving model to '/scratch/map22-share/pyav/experiments/both13/model_0_dihard_50e_lr1em4_2/epoch=1.ckpt' as top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 2, global step 654: 'DiarizationErrorRate' reached 0.52282 (best 0.52282), saving model to '/scratch/map22-share/pyav/experiments/both13/model_0_dihard_50e_lr1em4_2/epoch=2.ckpt' as top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 3, global step 872: 'DiarizationErrorRate' reached 0.49475 (best 0.49475), saving model to '/scratch/map22-share/pyav/experiments/both13/model_0_dihard_50e_lr1em4_2/epoch=3.ckpt' as top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 4, global step 1090: 'DiarizationErrorRate' reached 0.47184 (best 0.47184), saving model to '/scratch/map22-share/pyav/experiments/both13/model_0_dihard_50e_lr1em4_2/epoch=4.ckpt' as top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 5, global step 1308: 'DiarizationErrorRate' reached 0.46740 (best 0.46740), saving model to '/scratch/map22-share/pyav/experiments/both13/model_0_dihard_50e_lr1em4_2/epoch=5.ckpt' as top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 6, global step 1526: 'DiarizationErrorRate' reached 0.45933 (best 0.45933), saving model to '/scratch/map22-share/pyav/experiments/both13/model_0_dihard_50e_lr1em4_2/epoch=6.ckpt' as top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 7, global step 1744: 'DiarizationErrorRate' was not in top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 8, global step 1962: 'DiarizationErrorRate' was not in top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 9, global step 2180: 'DiarizationErrorRate' reached 0.45256 (best 0.45256), saving model to '/scratch/map22-share/pyav/experiments/both13/model_0_dihard_50e_lr1em4_2/epoch=9.ckpt' as top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 10, global step 2398: 'DiarizationErrorRate' reached 0.44870 (best 0.44870), saving model to '/scratch/map22-share/pyav/experiments/both13/model_0_dihard_50e_lr1em4_2/epoch=10.ckpt' as top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 11, global step 2616: 'DiarizationErrorRate' reached 0.44486 (best 0.44486), saving model to '/scratch/map22-share/pyav/experiments/both13/model_0_dihard_50e_lr1em4_2/epoch=11.ckpt' as top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 12, global step 2834: 'DiarizationErrorRate' was not in top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 13, global step 3052: 'DiarizationErrorRate' reached 0.44384 (best 0.44384), saving model to '/scratch/map22-share/pyav/experiments/both13/model_0_dihard_50e_lr1em4_2/epoch=13.ckpt' as top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 14, global step 3270: 'DiarizationErrorRate' was not in top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 15, global step 3488: 'DiarizationErrorRate' reached 0.43924 (best 0.43924), saving model to '/scratch/map22-share/pyav/experiments/both13/model_0_dihard_50e_lr1em4_2/epoch=15.ckpt' as top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 16, global step 3706: 'DiarizationErrorRate' was not in top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 17, global step 3924: 'DiarizationErrorRate' was not in top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 18, global step 4142: 'DiarizationErrorRate' was not in top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 19, global step 4360: 'DiarizationErrorRate' was not in top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 20, global step 4578: 'DiarizationErrorRate' reached 0.43889 (best 0.43889), saving model to '/scratch/map22-share/pyav/experiments/both13/model_0_dihard_50e_lr1em4_2/epoch=20.ckpt' as top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 21, global step 4796: 'DiarizationErrorRate' was not in top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 22, global step 5014: 'DiarizationErrorRate' was not in top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 23, global step 5232: 'DiarizationErrorRate' was not in top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 24, global step 5450: 'DiarizationErrorRate' was not in top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 25, global step 5668: 'DiarizationErrorRate' was not in top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 26, global step 5886: 'DiarizationErrorRate' was not in top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 27, global step 6104: 'DiarizationErrorRate' was not in top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 28, global step 6322: 'DiarizationErrorRate' was not in top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 29, global step 6540: 'DiarizationErrorRate' was not in top 1
+/ext3/miniforge3/lib/python3.12/site-packages/torch_audiomentations/core/transforms_interface.py:225: UserWarning: target_rate is required by Identity. It has been automatically inferred from targets shape to 59. If this is incorrect, you can pass it directly.
+  warnings.warn(
+Epoch 30, global step 6758: 'DiarizationErrorRate' was not in top 1
+INFO:speechbrain.utils.quirks:Applied quirks (see `speechbrain.utils.quirks`): [allow_tf32, disable_jit_profiling]
+INFO:speechbrain.utils.quirks:Excluded quirks specified by the `SB_DISABLE_QUIRKS` environment (comma-separated list): []
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/audio/utils/reproducibility.py:74: ReproducibilityWarning: TensorFloat-32 (TF32) has been disabled as it might lead to reproducibility issues and lower accuracy.
+It can be re-enabled by calling
+   >>> import torch
+   >>> torch.backends.cuda.matmul.allow_tf32 = True
+   >>> torch.backends.cudnn.allow_tf32 = True
+See https://github.com/pyannote/pyannote-audio/issues/1370 for more details.
+
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/audio/models/blocks/pooling.py:104: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at ../aten/src/ATen/native/ReduceOps.cpp:1823.)
+  std = sequences.std(dim=-1, correction=1)
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/database/protocol/protocol.py:140: UserWarning: Existing precomputed key "annotation" has been modified by a preprocessor.
+  warnings.warn(msg.format(key=key))
+/ext3/miniforge3/lib/python3.12/site-packages/pyannote/metrics/utils.py:200: UserWarning: 'uem' was approximated by the union of 'reference' and 'hypothesis' extents.
+  warnings.warn(
