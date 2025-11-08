@@ -1,4 +1,6 @@
 import torch
+import torch.nn as nn
+import torch.nn.functional as F
 import argparse
 from pytorch_lightning.loggers import WandbLogger
 
@@ -86,6 +88,119 @@ from pyannote.audio.core.model import Model
 from pyannote.audio.models.segmentation import PyanNet
 import torch.nn.functional as F
 from einops import rearrange
+
+class CoAttentionEncoder(nn.Module):
+    """Co-attention encoder for multimodal fusion, returns enhanced embeddings"""
+    def __init__(self, audio_embed_dim=128, video_embed_dim=60, num_heads=8, num_layers=2, 
+                 dim_feedforward=512, dropout=0.1, activation='relu'):
+        super().__init__()
+        self._num_layers = num_layers
+        self.audio_embed_dim = audio_embed_dim
+        self.video_embed_dim = video_embed_dim
+        
+        # Audio self-attention layers
+        self.audio_self_attn_layers = nn.ModuleList([
+            nn.TransformerEncoderLayer(
+                d_model=audio_embed_dim,
+                nhead=num_heads,
+                dim_feedforward=dim_feedforward,
+                dropout=dropout,
+                activation=activation,
+                batch_first=True
+            ) for _ in range(num_layers)
+        ])
+        
+        # Video self-attention layers
+        video_heads = max(1, num_heads // 2)  # Ensure divisibility
+        assert video_embed_dim % video_heads == 0, f"video_embed_dim ({video_embed_dim}) must be divisible by video_heads ({video_heads})"
+        
+        self.video_self_attn_layers = nn.ModuleList([
+            nn.TransformerEncoderLayer(
+                d_model=video_embed_dim,
+                nhead=video_heads,
+                dim_feedforward=dim_feedforward // 2,
+                dropout=dropout,
+                activation=activation,
+                batch_first=True
+            ) for _ in range(num_layers)
+        ])
+        
+        # Cross-attention layers: Audio queries Video
+        self.video_to_audio_proj = nn.Linear(video_embed_dim, audio_embed_dim)
+        self.audio_queries_video_attn_layers = nn.ModuleList([
+            nn.MultiheadAttention(
+                embed_dim=audio_embed_dim,
+                num_heads=num_heads,
+                dropout=dropout,
+                batch_first=True
+            ) for _ in range(num_layers)
+        ])
+        
+        # Cross-attention layers: Video queries Audio  
+        self.audio_to_video_proj = nn.Linear(audio_embed_dim, video_embed_dim)
+        self.video_queries_audio_attn_layers = nn.ModuleList([
+            nn.MultiheadAttention(
+                embed_dim=video_embed_dim,
+                num_heads=video_heads,
+                dropout=dropout,
+                batch_first=True
+            ) for _ in range(num_layers)
+        ])
+        
+        # Layer normalization for residual connections
+        self.audio_layer_norms = nn.ModuleList([
+            nn.LayerNorm(audio_embed_dim) for _ in range(num_layers)
+        ])
+        self.video_layer_norms = nn.ModuleList([
+            nn.LayerNorm(video_embed_dim) for _ in range(num_layers)
+        ])
+
+    def forward(self, audio_emb, video_emb, audio_mask=None, video_mask=None):
+        """
+        Args:
+            audio_emb: [batch, frames, audio_embed_dim] - Audio embeddings from upstream
+            video_emb: [batch, frames, video_embed_dim] - Video embeddings after interpolation
+            
+        Returns:
+            enhanced_audio: [batch, frames, audio_embed_dim] - Enhanced audio embeddings
+            enhanced_video: [batch, frames, video_embed_dim] - Enhanced video embeddings
+        """
+        for i in range(self._num_layers):
+            # Audio self-attention
+            audio_emb_self = self.audio_self_attn_layers[i](
+                src=audio_emb,
+                src_mask=audio_mask
+            )
+            
+            # Video self-attention
+            video_emb_self = self.video_self_attn_layers[i](
+                src=video_emb,
+                src_mask=video_mask
+            )
+            
+            # Cross-attention 1: Audio queries Video
+            video_kv = self.video_to_audio_proj(video_emb_self)
+            audio_cross_attn, _ = self.audio_queries_video_attn_layers[i](
+                query=audio_emb_self,
+                key=video_kv,
+                value=video_kv
+            )
+            
+            # Cross-attention 2: Video queries Audio
+            audio_kv = self.audio_to_video_proj(audio_emb_self)
+            video_cross_attn, _ = self.video_queries_audio_attn_layers[i](
+                query=video_emb_self,
+                key=audio_kv,
+                value=audio_kv
+            )
+            
+            # Residual connections with layer normalization
+            audio_emb = self.audio_layer_norms[i](audio_emb + audio_cross_attn)
+            video_emb = self.video_layer_norms[i](video_emb + video_cross_attn)
+        
+        return audio_emb, video_emb
+
+
 
 # class ModifiedModel(torch.nn.Module):
 # class ModifiedModel(Model):
@@ -220,6 +335,38 @@ class ModifiedModel(PyanNet):
                 torch.nn.Linear(60, 60),
                 torch.nn.ReLU())
 
+        elif model == 6:
+            # Model 6: late fusion + CoAttentionEncoder
+            self.second_input = torch.nn.Sequential(
+                torch.nn.Linear(esize, 60),
+                torch.nn.ReLU(),
+                torch.nn.Linear(60, 60),
+                torch.nn.ReLU())
+            
+            
+            self.co_attention_encoder = CoAttentionEncoder(
+                audio_embed_dim=128,  
+                video_embed_dim=60,
+                num_heads=4,
+                num_layers=2,
+                dropout=0.1
+            )
+
+            self.merge = torch.nn.Sequential(
+                torch.nn.Linear(188, 128),
+                torch.nn.ReLU(),
+                torch.nn.Linear(128, 128),
+                torch.nn.ReLU()
+            )
+            # self.merge = torch.nn.Sequential(
+            #     torch.nn.Linear(188, 256),
+            #     torch.nn.ReLU(),
+            #     torch.nn.Linear(256, 128),
+            #     torch.nn.ReLU(),
+            #     torch.nn.Linear(128, 128),
+            #     torch.nn.ReLU()
+            # )
+
         else:
             print("Model %d not implemented" % model)
             exit()
@@ -350,7 +497,7 @@ class ModifiedModel(PyanNet):
 #        print("outputs_npy_interp.shape", file=f)
 #        print(outputs_npy_interp.shape, file=f)
 
-        if not (model == 3 or model == 4):
+        if not (model == 3 or model == 4 or model == 6):
             concat_outputs = torch.cat((outputs_sincnet, outputs_npy_interp),1)
             outputs = rearrange(self.merge(rearrange(concat_outputs,"batch feature frame -> batch frame feature")), "batch frame feature -> batch feature frame")
         
@@ -359,7 +506,7 @@ class ModifiedModel(PyanNet):
 #
         if justaudio and justvideo:
             print("Both justaudio and justvideo are set. Please make up your mind!!!")
-        if justaudio or model == 3 or model == 4:
+        if justaudio or model == 3 or model == 4 or model == 6:
             outputs = outputs_sincnet
         if justvideo:
             outputs = outputs_npy_interp
@@ -389,6 +536,18 @@ class ModifiedModel(PyanNet):
 #        print(outputs, file=f)
 #        print("outputs_linear.shape", file=f)
 #        print(outputs.shape, file=f)
+
+        if model == 6:
+            # outputs: [batch, frames, audio_dim]
+            # outputs_npy_interp: [batch, video_dim, frames] 
+            
+            #  [batch, video_dim, frames] -> [batch, frames, video_dim]
+            video_features = rearrange(outputs_npy_interp, "batch feature frame -> batch frame feature")
+
+            outputs, video_features = self.co_attention_encoder(outputs, video_features)
+            
+            concat_outputs = torch.cat((outputs, video_features), 2)
+            outputs = self.merge(concat_outputs)
 
         if model == 3 or model == 4:
             concat_outputs = torch.cat((outputs, rearrange(outputs_npy_interp, "batch feature frame -> batch frame feature")),2)
