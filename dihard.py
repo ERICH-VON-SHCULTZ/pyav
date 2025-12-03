@@ -367,6 +367,52 @@ class ModifiedModel(PyanNet):
             #     torch.nn.ReLU()
             # )
 
+        elif model == 7:
+            # Model 7: early fusion + late fusion + CoAttentionEncoder
+            # Early fusion layers
+            self.early_second_input = torch.nn.Sequential(
+                torch.nn.Linear(esize, 60),
+                torch.nn.ReLU(),
+                torch.nn.Linear(60, 60),
+                torch.nn.ReLU())
+            
+            # Early fusion co-attention encoder
+            self.early_co_attention_encoder = CoAttentionEncoder(
+                audio_embed_dim=60,   # SincNet output dim (assuming 60)
+                video_embed_dim=60,
+                num_heads=4,
+                num_layers=2,
+                dropout=0.1
+            )
+            
+            # Early fusion merge layer
+            self.early_merge = torch.nn.Sequential(
+                torch.nn.Linear(120, 60),  # 60 (audio) + 60 (video) = 120
+                torch.nn.ReLU())
+            
+            # Late fusion layers (same as model 6)
+            self.second_input = torch.nn.Sequential(
+                torch.nn.Linear(esize, 60),
+                torch.nn.ReLU(),
+                torch.nn.Linear(60, 60),
+                torch.nn.ReLU())
+            
+            # Late fusion co-attention encoder
+            self.co_attention_encoder = CoAttentionEncoder(
+                audio_embed_dim=128,  # After LSTM/Linear layers
+                video_embed_dim=60,
+                num_heads=4,
+                num_layers=2,
+                dropout=0.1
+            )
+
+            # Final merge layer
+            self.merge = torch.nn.Sequential(
+                torch.nn.Linear(188, 128),
+                torch.nn.ReLU(),
+                torch.nn.Linear(128, 128),
+                torch.nn.ReLU()
+            )
         else:
             print("Model %d not implemented" % model)
             exit()
@@ -445,6 +491,27 @@ class ModifiedModel(PyanNet):
 
         # list of task-dependent layers
         self.task_dependent = list(name for name, _ in after - before)
+        if model == 6:
+            self._apply_lstm_freezing()
+
+    def _apply_lstm_freezing(self):
+        if hasattr(self, 'lstm'):
+            if hasattr(self.hparams, 'lstm') and self.hparams.lstm.get("monolithic", False):
+                for param in self.lstm.parameters():
+                    param.requires_grad = False
+                print("Model 6: Monolithic LSTM parameters frozen")
+            else:
+                if isinstance(self.lstm, nn.ModuleList):
+                    for lstm_layer in self.lstm:
+                        for param in lstm_layer.parameters():
+                            param.requires_grad = False
+                    print("Model 6: Multi-layer LSTM parameters frozen")
+                else:
+                    for param in self.lstm.parameters():
+                        param.requires_grad = False
+                    print("Model 6: LSTM parameters frozen")
+        else:
+            print("Warning: LSTM layer not found in model")
 
     def forward(self, audio, npy) -> torch.Tensor:
         """Pass forward
@@ -458,59 +525,62 @@ class ModifiedModel(PyanNet):
         scores : (batch, frame, classes)
         """
 
-#        f = open('out.txt', 'a')
-#        print("Reached forward pass", file=f)
-#        print("Audio size", file=f)
-#        print(audio.size(), file=f)
-#        print("npy size", file=f)
-#        print(npy.size(), file=f)
-#       print("audio", file=f)
-#       print(audio, file=f)
-
         outputs_sincnet = self.sincnet(audio)
 
-#       for name, param in self.sincnet.named_parameters():
-#           print(f"Layer: {name} | Size: {param.size()} | Values: {param}")
-#        print("self.lstm")
-#        for name, param in self.lstm.named_parameters():
-#            print(f"Layer: {name} | Size: {param.size()} | Values: {param}")
-#        print("self.linear")
-#        for name, param in self.linear.named_parameters():
-#            print(f"Layer: {name} | Size: {param.size()} | Values: {param}")
-#        print("self.classifier")
-#        for name, param in self.classifier.named_parameters():
-#            print(f"Layer: {name} | Size: {param.size()} | Values: {param}")
-#        print("outputs", file=f)
-#        print(outputs_sincnet, file=f)
-#        print("outputs_sincnet.shape", file=f)
-#        print(outputs_sincnet.shape, file=f)
+        if model == 7:
+            # Model 7: Early fusion + Late fusion
+            # Early fusion stage
+            outputs_npy_early = self.early_second_input(npy)
+            sincnet_frames = outputs_sincnet.size()[2]
+            
+            # Interpolate early video features to match audio frames
+            outputs_npy_early_interp = F.interpolate(
+                rearrange(outputs_npy_early, "batch feature frame -> batch frame feature"), 
+                sincnet_frames
+            )
+            
+            # Convert to [batch, frames, features] for co-attention
+            audio_early = rearrange(outputs_sincnet, "batch feature frame -> batch frame feature")
+            video_early = rearrange(outputs_npy_early_interp, "batch feature frame -> batch frame feature")
+            
+            # Apply early co-attention
+            audio_early_enhanced, video_early_enhanced = self.early_co_attention_encoder(
+                audio_early, video_early
+            )
+            
+            # Early fusion
+            early_concat = torch.cat((audio_early_enhanced, video_early_enhanced), 2)
+            early_fused = self.early_merge(early_concat)
+            
+            # Convert back to [batch, feature, frame] for subsequent layers
+            outputs = rearrange(early_fused, "batch frame feature -> batch feature frame")
+            
+        else:
+            # Original logic for other models
+            outputs_npy = self.second_input(npy)
+            sincnet_frames = outputs_sincnet.size()[2]
+            outputs_npy_interp = F.interpolate(rearrange(outputs_npy, "batch feature frame -> batch frame feature"), sincnet_frames)
+
+            if not (model == 3 or model == 4 or model == 6):
+                concat_outputs = torch.cat((outputs_sincnet, outputs_npy_interp),1)
+                outputs = rearrange(self.merge(rearrange(concat_outputs,"batch feature frame -> batch frame feature")), "batch frame feature -> batch feature frame")
+
+            # For processing audio input only. It ignores the embeddings.
+            if justaudio or model == 3 or model == 4 or model == 6:
+                outputs = outputs_sincnet
+            if justvideo:
+                outputs = outputs_npy_interp
+
+        # Handle justaudio/justvideo for model 7
+        if model == 7:
+            if justaudio and justvideo:
+                print("Both justaudio and justvideo are set. Please make up your mind!!!")
+            if justaudio:
+                outputs = outputs_sincnet
+            if justvideo:
+                outputs = rearrange(video_early_enhanced, "batch frame feature -> batch feature frame")
         
-        outputs_npy = self.second_input(npy)
 
-        sincnet_frames = outputs_sincnet.size()[2]
-
-#        print("outputs_npy.shape", file=f)
-#        print(outputs_npy.shape, file=f)
-
-        outputs_npy_interp = F.interpolate(rearrange(outputs_npy, "batch feature frame -> batch frame feature"), sincnet_frames)
-
-#        print("outputs_npy_interp.shape", file=f)
-#        print(outputs_npy_interp.shape, file=f)
-
-        if not (model == 3 or model == 4 or model == 6):
-            concat_outputs = torch.cat((outputs_sincnet, outputs_npy_interp),1)
-            outputs = rearrange(self.merge(rearrange(concat_outputs,"batch feature frame -> batch frame feature")), "batch frame feature -> batch feature frame")
-        
-#
-#       For processing audio input only. It ignores the embeddings.
-#
-        if justaudio and justvideo:
-            print("Both justaudio and justvideo are set. Please make up your mind!!!")
-        if justaudio or model == 3 or model == 4 or model == 6:
-            outputs = outputs_sincnet
-        if justvideo:
-            outputs = outputs_npy_interp
-        
         if self.hparams.lstm["monolithic"]:
             outputs, _ = self.lstm(
                 rearrange(outputs, "batch feature frame -> batch frame feature")
@@ -522,44 +592,45 @@ class ModifiedModel(PyanNet):
                 if i + 1 < self.hparams.lstm["num_layers"]:
                     outputs = self.dropout(outputs)
 
-#        print("outputs for lstm", file=f)
-#        print(outputs, file=f)
-#        print("outputs_lstm.shape", file=f)
-#        print(outputs.shape, file=f)
-        
 
         if self.hparams.linear["num_layers"] > 0:
             for linear in self.linear:
                 outputs = F.leaky_relu(linear(outputs))
 
-#        print("outputs for linear", file=f)
-#        print(outputs, file=f)
-#        print("outputs_linear.shape", file=f)
-#        print(outputs.shape, file=f)
-
+        # Late fusion stage - only for specific models
         if model == 6:
-            # outputs: [batch, frames, audio_dim]
-            # outputs_npy_interp: [batch, video_dim, frames] 
-            
-            #  [batch, video_dim, frames] -> [batch, frames, video_dim]
+            # Original model 6 logic
             video_features = rearrange(outputs_npy_interp, "batch feature frame -> batch frame feature")
-
             outputs, video_features = self.co_attention_encoder(outputs, video_features)
-            
             concat_outputs = torch.cat((outputs, video_features), 2)
             outputs = self.merge(concat_outputs)
+            
+        elif model == 7:
+            # Model 7 late fusion stage
+            outputs_npy_late = self.second_input(npy)
+            lstm_frames = outputs.size()[1]  # Current frame count after LSTM
+            
+            # Interpolate late video features to match current frames
+            outputs_npy_late_interp = F.interpolate(
+                rearrange(outputs_npy_late, "batch feature frame -> batch frame feature"), 
+                lstm_frames
+            )
+            video_features_late = rearrange(outputs_npy_late_interp, "batch feature frame -> batch frame feature")
+            
+            # Apply late co-attention
+            outputs, video_features_late = self.co_attention_encoder(outputs, video_features_late)
+            
+            # Final fusion
+            concat_outputs = torch.cat((outputs, video_features_late), 2)
+            outputs = self.merge(concat_outputs)
 
-        if model == 3 or model == 4:
+        elif model == 3 or model == 4:
+            # Original model 3 and 4 logic
             concat_outputs = torch.cat((outputs, rearrange(outputs_npy_interp, "batch feature frame -> batch frame feature")),2)
             outputs = self.merge(concat_outputs)
 
+        # Final classification (common for all models)
         outputs = self.classifier(outputs)
-
-#        print("outputs for classifier", file=f)
-#        print(outputs, file=f)
-#        print("outputs_classifier.shape", file=f)
-#        print(outputs.shape, file=f)
-#        f.close()
 
         return self.activation(outputs)
     
@@ -572,7 +643,7 @@ class ModifiedModel(PyanNet):
 from pyannote.audio import Pipeline, Model
 
 if not finetune:
-    pretrained_pipeline = Pipeline.from_pretrained(pretrained_diarization_system, use_auth_token="YourHFtoken")
+    pretrained_pipeline = Pipeline.from_pretrained(pretrained_diarization_system, use_auth_token="hf_ypqKCKCUFLMFz zICjGsVmKDBTqbZLhJLZv")
     base_segmentation_model = Model.from_pretrained(pretrained_segmentation_system, use_auth_token="hf_ypqKCKCUFLMFz zICjGsVmKDBTqbZLhJLZv")
     pretrained_segmentation_model = ModifiedModel(base_segmentation_model)
     # 3. Transfer weights
@@ -834,7 +905,7 @@ else:
 
     # Initial full pipeline with entries from the pretrained system
     
-    pretrained_pipeline = Pipeline.from_pretrained(pretrained_diarization_system, use_auth_token="YourHFtoken")
+    pretrained_pipeline = Pipeline.from_pretrained(pretrained_diarization_system, use_auth_token="hf_ypqKCKCUFLMFz zICjGsVmKDBTqbZLhJLZv")
 
     pipeline = SpeakerDiarization(
         segmentation=finetuned_model,
