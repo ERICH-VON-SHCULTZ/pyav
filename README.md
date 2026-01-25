@@ -154,13 +154,24 @@ python /scratch/map22-share/pyav/dihard_integrated.py \
 
 ## Special Features & Arguments
 
+
 ### LSTM Parameter Freezing
 
-Specifically for **Model 6 (Late Fusion)**, the system is designed to freeze the parameters of the LSTM layers during the initial phase of fine-tuning.
+**Important Note for Model 6 (Late Fusion):**
 
-* **Why?** Since we are loading a pre-trained segmentation model, the audio feature extractor (SincNet + LSTM) is already robust. We want the model to focus on learning the *new* fusion weights (the Co-Attention Encoder) without destroying the learned audio representations.
-* **Mechanism:** The code checks for `model == 6` and sets `requires_grad = False` for the LSTM layers automatically before training starts.
+To freeze the LSTM parameters during fine-tuning, you must execute the experiment using **`dihard.py`** instead of `dihard_integrated.py`.
 
+The `dihard.py` script contains a dedicated function, `_apply_lstm_freezing`, which explicitly sets `requires_grad = False` for the LSTM layers when `model == 6` is selected. The integrated script (`dihard_integrated.py`) does not apply this freezing by default.
+
+**Example Command Change:**
+
+```bash
+# To use LSTM freezing with Model 6, change the python script path:
+python /scratch/map22-share/pyav/dihard.py \
+       --model 6 \
+       ... (rest of arguments)
+
+```
 ### Key Arguments Explained
 
 * `--model [int]`: Selects the architecture ID.
